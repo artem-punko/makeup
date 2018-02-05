@@ -1,6 +1,10 @@
 .lds-heart {
     display: inline-block;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    margin-left: -32px;
+    left: 50%;
     width: 64px;
     height: 64px;
     transform: rotate(45deg);
@@ -12,7 +16,7 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    background: rgb(0, 0, 0);
+    background: rgba(148, 0, 0, 0.885);
     animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .lds-heart div:after,
@@ -22,7 +26,7 @@
     display: block;
     width: 26px;
     height: 26px;
-    background: rgb(0, 0, 0);
+    background: rgb(131, 0, 0);
   }
   .lds-heart div:before {
     left: -17px;
@@ -52,4 +56,10 @@
       transform: scale(0.9);
     }
   }
-  
+
+  html {
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+    background-color: rgb(246,246,246);
+  }

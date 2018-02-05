@@ -4,7 +4,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap'
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { DataService } from './data.service';
-
+import { NgxImageGalleryModule } from 'ngx-image-gallery';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,6 +12,7 @@ import { DataService } from './data.service';
   imports: [
     BrowserModule,
     HttpModule,
+    NgxImageGalleryModule,
     NgbModule.forRoot()
   ],
   providers: [DataService],
