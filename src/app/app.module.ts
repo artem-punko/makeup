@@ -40,7 +40,6 @@ import {
   MatToolbarModule,
   MatTooltipModule,
 } from '@angular/material';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 
@@ -88,7 +87,6 @@ export class DemoMaterialModule {}
     AppComponent
   ],
   imports: [
-    MDBBootstrapModule.forRoot(),
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
