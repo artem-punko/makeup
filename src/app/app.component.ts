@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   telegram = false;
   phone = false;
   vk = false;
+  skype = false;
 
   ngOnInit() {
 
@@ -77,5 +78,18 @@ export class AppComponent implements OnInit {
   clickViber() {
     window.open(
       'viber://add?number=%2B375292762060');
+  }
+
+  skypeEvent(event) {
+    this.skype = event;
+  }
+
+  skypeEventOut(event) {
+    this.skype = false;
+  }
+
+  clickSkype() {
+    window.open(
+      'skype:zasranka2497');
   }
 }
