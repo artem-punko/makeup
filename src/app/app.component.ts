@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
 
   clickPhone() {
     window.open(
-      'tel: +375292762060', '_blank').focus();
+      'tel:%2B375292762060', '_blank').focus();
   }
 
   viberEvent(event) {
