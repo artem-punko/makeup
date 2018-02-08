@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
 
   clickVk() {
     window.open(
-      'https://vk.com/id155454968', '_blank').focus();
+      'https://vk.com/stribuk_make_up', '_blank').focus();
   }
 
   telegramEvent(event) {
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
 
   clickTelegram() {
     window.open(
-      'http://www.instagram.com/stribuk_make_up/', '_blank').focus();
+      'tg://resolve?domain=artem_punko', '_blank').focus();
   }
 
   phoneEvent(event) {
@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
 
   clickPhone() {
     window.open(
-      'http://www.instagram.com/stribuk_make_up/', '_blank').focus();
+      'tel: +375292762060', '_blank').focus();
   }
 
   viberEvent(event) {
@@ -77,6 +77,6 @@ export class AppComponent implements OnInit {
 
   clickViber() {
     window.open(
-      'viber://add?number=%2B375336563560', '_blank').focus();
+      'viber://add?number=%2B375292762060', '_blank').focus();
   }
 }
