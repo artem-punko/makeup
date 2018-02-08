@@ -63,8 +63,7 @@ export class AppComponent implements OnInit {
   }
 
   clickPhone() {
-    document.location.href = 'tel:375292762060';
-    // window.open('tel:+375292762060');
+    document.getElementById('mymailto').click();
   }
 
   viberEvent(event) {

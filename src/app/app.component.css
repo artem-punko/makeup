@@ -12,17 +12,55 @@
     right: 0;
   }
 
-.insight-container {
-  height: 50%;
-  width: 100%;
-  background-color: rgb(250,252,251);
+.link-to-phone {
+    text-decoration: none;
+    color: rgb(99, 99, 99);
 }
+
+.link-to-phone:hover {
+    text-decoration: none;
+    color: rgb(155, 0, 0);
+}
+
+.insight-container {
+    height: 50%;
+    width: 100%;
+    background-color: rgb(250,252,251);
+    padding-top: 5%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width: 5%;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(170, 170, 170, 0.788);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+  }
+  
+  ::-webkit-scrollbar-track{
+    border-width:0;
+  }
+  
+  ::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+  }
 
 .photo-container {
     text-align: center;
     background-color: rgba(230, 230, 230, 0.542);
     height: 40%;
     width: 100%;
+    overflow: auto;
 
 }
 
@@ -30,6 +68,7 @@
     background-color: rgba(230, 230, 230, 0.542);
     height: 10%;
     width: 100%;
+    overflow: auto;
 }
 
 .circle {
@@ -52,86 +91,104 @@
 
 .vk {
     width: 100%;
-    height: 25%;
+    height: 20%;
     color: rgb(99, 99, 99);
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .vk:hover {
     width: 100%;
-    height: 25%;
+    height: 20%;
     cursor: pointer;
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
+    color: rgb(155, 0, 0);
+}
+
+.skype {
+    width: 100%;
+    height: 20%;
+    color: rgb(99, 99, 99);
+    font-family: Caveat;
+    font-size: 23px;
+}
+
+.skype:hover {
+    width: 100%;
+    height: 20%;
+    cursor: pointer;
+    font-family: Caveat;
+    font-size: 23px;
     color: rgb(155, 0, 0);
 }
 
 .inst {
     width: 100%;
-    height: 25%;
+    height: 20%;
     color: rgb(99, 99, 99);
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .inst:hover {
     width: 100%;
-    height: 25%;
+    height: 20%;
     cursor: pointer;
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
     color: rgb(155, 0, 0);
 }
 
 .viber {
     width: 100%;
-    height: 25%;
+    height: 20%;
     color: rgb(99, 99, 99);
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 
 .viber:hover {
     width: 100%;
-    height: 25%;
+    height: 20%;
     cursor: pointer;
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
     color: rgb(155, 0, 0);
 }
 
 .phone {
     width: 100%;
-    height: 25%;
+    height: 20%;
     color: rgb(99, 99, 99);
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .phone:hover {
     width: 100%;
-    height: 25%;
+    height: 20%;
     cursor: pointer;
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
     color: rgb(155, 0, 0);
 }
 
 .telegram {
     width: 100%;
-    height: 25%;
+    height: 20%;
     color: rgb(99, 99, 99);
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .telegram:hover {
     width: 100%;
-    height: 25%;
+    height: 20%;
     cursor: pointer;
     font-family: Caveat;
-    font-size: 25px;
+    font-size: 23px;
     color: rgb(155, 0, 0);
 }
+

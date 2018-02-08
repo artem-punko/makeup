@@ -1,6 +1,3 @@
-<div class="label-container">
-
-</div>
 <div class="example-container">
   <div class="photo-container">
     <div class="text-center">
@@ -9,40 +6,44 @@
   </div>
   <div class="insight-container">
     <div class="social-group row">
-      <!-- <a href="tel:12345678"> -->
-        <div (mouseover)="phoneEvent($event)" (mouseout)="phoneEventOut($event)" class="phone col-12 size">
-          <img *ngIf="!phone" width="15%" src="../assets/tel.png" alt="альтернативный текст">
-          <img *ngIf="phone" width="15%" src="../assets/tel1.png" alt="альтернативный текст"> - +375292762060
-        </div>
-      <!-- </a> -->
+
+      <div (mouseover)="phoneEvent($event)" (mouseout)="phoneEventOut($event)" class="phone col-12 size">
+        <a class="link-to-phone" href="tel:+375292762060">
+          <img *ngIf="!phone" width="13%" src="../assets/tel.png" alt="альтернативный текст">
+          <img *ngIf="phone" width="13%" src="../assets/tel1.png" alt="альтернативный текст"> - +375292762060</a>
+      </div>
     </div>
     <div class="social-group row">
       <div (click)="clickInst()" (mouseover)="instEvent($event)" (mouseout)="instEventOut($event)" class="inst col-12 size">
-        <img *ngIf="!inst" width="15%" src="../assets/i.png" alt="альтернативный текст">
-        <img *ngIf="inst" width="15%" src="../assets/i1.png" alt="альтернативный текст"> - stribuk_make_up
+        <img *ngIf="!inst" width="13%" src="../assets/i.png" alt="альтернативный текст">
+        <img *ngIf="inst" width="13%" src="../assets/i1.png" alt="альтернативный текст"> - stribuk_make_up
       </div>
     </div>
     <div class="social-group row">
       <div (click)="clickVk()" (mouseover)="vkEvent($event)" (mouseout)="vkEventOut($event)" class="vk col-12 size">
-        <img *ngIf="!vk" width="15%" src="../assets/v.png" alt="альтернативный текст">
-        <img *ngIf="vk" width="15%" src="../assets/v1.png" alt="альтернативный текст"> - stribuk_make_up
+        <img *ngIf="!vk" width="13%" src="../assets/v.png" alt="альтернативный текст">
+        <img *ngIf="vk" width="13%" src="../assets/v1.png" alt="альтернативный текст"> - stribuk_make_up
       </div>
     </div>
     <div class="social-group row">
       <div (click)="clickViber()" (mouseover)="viberEvent($event)" (mouseout)="viberEventOut($event)" class="viber col-12 size">
-        <img *ngIf="!viber" width="15%" src="../assets/vi.png" alt="альтернативный текст">
-        <img *ngIf="viber" width="15%" src="../assets/vi1.png" alt="альтернативный текст"> - +375292762060
+        <img *ngIf="!viber" width="13%" src="../assets/vi.png" alt="альтернативный текст">
+        <img *ngIf="viber" width="13%" src="../assets/vi1.png" alt="альтернативный текст"> - +375292762060
       </div>
     </div>
     <div class="social-group row">
       <div (click)="clickTelegram()" (mouseover)="telegramEvent($event)" (mouseout)="telegramEventOut($event)" class="telegram col-12 size">
-        <img *ngIf="!telegram" width="15%" src="../assets/t.png" alt="альтернативный текст">
-        <img *ngIf="telegram" width="15%" src="../assets/t1.png" alt="альтернативный текст"> - +375292762060
+        <img *ngIf="!telegram" width="13%" src="../assets/t.png" alt="альтернативный текст">
+        <img *ngIf="telegram" width="13%" src="../assets/t1.png" alt="альтернативный текст"> - +375292762060
+      </div>
+    </div>
+    <div class="social-group row">
+      <div (click)="clickSkype()" (mouseover)="skypeEvent($event)" (mouseout)="skypeEventOut($event)" class="skype col-12 size">
+        <img *ngIf="!skype" width="13%" src="../assets/sk.png" alt="альтернативный текст">
+        <img *ngIf="skype" width="13%" src="../assets/sk1.png" alt="альтернативный текст"> - zasranka2497
       </div>
     </div>
   </div>
   <div class="footer-container">
-
   </div>
 </div>
-<a href="tel:12345678">Позвонить</a>
