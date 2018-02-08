@@ -9,8 +9,8 @@
 
       <div (mouseover)="phoneEvent($event)" (mouseout)="phoneEventOut($event)" class="phone col-12 size">
         <a class="link-to-phone" href="tel:+375292762060">
-          <img *ngIf="!phone" width="13%" src="../assets/tel.png" alt="альтернативный текст">
-          <img *ngIf="phone" width="13%" src="../assets/tel1.png" alt="альтернативный текст"> - +375292762060</a>
+          <img *ngIf="!phone"  width="13%"  src="../assets/tel.png" alt="альтернативный текст">
+          <img *ngIf="phone"  src="../assets/tel1.png" alt="альтернативный текст"> - +375292762060</a>
       </div>
     </div>
     <div class="social-group row">
@@ -49,5 +49,11 @@
 </div>
 
 <div class="example-container-third">
-  
+  <div class="row size-block-for-photo">
+    <div class=" col-3 image-block" *ngFor="let image of images; let i = index"
+         (click)="gallery.open(i)">
+      <img class="image-size" [src]="image.thumbnail"/>
+    </div>
   </div>
+  </div>
+
