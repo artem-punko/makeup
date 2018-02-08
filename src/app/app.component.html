@@ -4,13 +4,45 @@
 <div class="example-container">
   <div class="photo-container">
     <div class="text-center">
-      <img src="../assets/2.jpg" alt="альтернативный текст" class="circle">
+      <img src="../assets/photo1.png" alt="альтернативный текст" class="circle">
     </div>
   </div>
   <div class="insight-container">
-
+    <div class="social-group row">
+      <div (mouseover)="phoneEvent($event)" (mouseout)="phoneEventOut($event)" class="phone col-12 size">
+        <img *ngIf="!phone" width="15%" src="../assets/tel.png" alt="альтернативный текст">
+        <img *ngIf="phone" width="15%" src="../assets/tel1.png" alt="альтернативный текст"> - +375292762060
+      </div>
+    </div>
+    <div class="social-group row">
+      <div (click)="clickInst()" (mouseover)="instEvent($event)" (mouseout)="instEventOut($event)" class="inst col-12 size">
+        <img *ngIf="!inst" width="15%" src="../assets/i.png" alt="альтернативный текст">
+        <img *ngIf="inst" width="15%" src="../assets/i1.png" alt="альтернативный текст"> - stribuk_make_up
+      </div>
+    </div>
+    <div class="social-group row">
+      <div (click)="clickVk()" (mouseover)="vkEvent($event)" (mouseout)="vkEventOut($event)" class="vk col-12 size">
+        <img *ngIf="!vk" width="15%" src="../assets/v.png" alt="альтернативный текст">
+        <img *ngIf="vk" width="15%" src="../assets/v1.png" alt="альтернативный текст"> - id155454968
+      </div>
+    </div>
+    <div class="social-group row">
+      <div (click)="clickViber()" (mouseover)="viberEvent($event)" (mouseout)="viberEventOut($event)" class="viber col-12 size">
+        <img *ngIf="!viber" width="15%" src="../assets/vi.png" alt="альтернативный текст">
+        <img *ngIf="viber" width="15%" src="../assets/vi1.png" alt="альтернативный текст"> - +375292762060
+      </div>
+    </div>
+    <div class="social-group row">
+      <div (click)="clickTelegram()" (mouseover)="telegramEvent($event)" (mouseout)="telegramEventOut($event)" class="telegram col-12 size">
+        <img *ngIf="!telegram" width="15%" src="../assets/t.png" alt="альтернативный текст">
+        <img *ngIf="telegram" width="15%" src="../assets/t1.png" alt="альтернативный текст"> - +375292762060
+      </div>
+    </div>
   </div>
+  <!-- t.me/ -->
   <div class="footer-container">
 
   </div>
 </div>
+
+<a title="Viber" href="viber://chat?number=+120345678910">Viber</a>

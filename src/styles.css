@@ -61,7 +61,13 @@
   width: 100%;
   height: auto;
   min-height: 1000px;
-  background-image: url("./assets/b2.jpg");
+  background-image: url("./assets/b3.png");
   background-repeat: repeat;
   /* // background: linear-gradient(to right,  rgb(182,183,185)0%,  rgb(221,222,224) 20%); */
   }
+
+  .size {
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
+   }
