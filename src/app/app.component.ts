@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
 
   clickTelegram() {
     window.open(
-      'tg://resolve?domain=artem_punko', '_blank').focus();
+      'tg://resolve?domain=artem_punko');
   }
 
   phoneEvent(event) {
@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
 
   clickPhone() {
     window.open(
-      'tel:%2B375292762060', '_blank').focus();
+      'tel:%2B375292762060', '').focus();
   }
 
   viberEvent(event) {
@@ -77,6 +77,6 @@ export class AppComponent implements OnInit {
 
   clickViber() {
     window.open(
-      'viber://add?number=%2B375292762060', '_blank').focus();
+      'viber://add?number=%2B375292762060');
   }
 }
