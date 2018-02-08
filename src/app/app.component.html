@@ -9,10 +9,12 @@
   </div>
   <div class="insight-container">
     <div class="social-group row">
-      <div (mouseover)="phoneEvent($event)" (mouseout)="phoneEventOut($event)" class="phone col-12 size">
-        <img *ngIf="!phone" width="15%" src="../assets/tel.png" alt="альтернативный текст">
-        <img *ngIf="phone" width="15%" src="../assets/tel1.png" alt="альтернативный текст"> - +375292762060
-      </div>
+      <!-- <a href="tel:12345678"> -->
+        <div (mouseover)="phoneEvent($event)" (mouseout)="phoneEventOut($event)" class="phone col-12 size">
+          <img *ngIf="!phone" width="15%" src="../assets/tel.png" alt="альтернативный текст">
+          <img *ngIf="phone" width="15%" src="../assets/tel1.png" alt="альтернативный текст"> - +375292762060
+        </div>
+      <!-- </a> -->
     </div>
     <div class="social-group row">
       <div (click)="clickInst()" (mouseover)="instEvent($event)" (mouseout)="instEventOut($event)" class="inst col-12 size">
