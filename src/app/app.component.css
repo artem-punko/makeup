@@ -54,7 +54,7 @@
 .insight-container {
     height: 50%;
     width: 100%;
-    background-color: rgb(250,252,251);
+    background-color: rgba(250, 252, 251, 0.337);
     padding-top: 15%;
     padding-bottom: 15%;
     overflow: auto;
