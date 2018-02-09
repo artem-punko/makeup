@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import { Gallery} from 'ng-gallery';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -12,7 +14,63 @@ export class AppComponent implements OnInit {
   vk = false;
   skype = false;
 
+  images = [
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    },
+    {
+      src: '../assets/1.jpg',
+      thumbnail: '../assets/1.jpg',
+      text: 'See Sunset View'
+    }
+  ];
+
+  constructor(public gallery: Gallery) {}
+
   ngOnInit() {
+    this.gallery.load(this.images);
 
   }
 

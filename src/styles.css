@@ -60,14 +60,40 @@
   html {
   width: 100%;
   height: auto;
-  min-height: 1000px;
+  min-height: 200%;
   background-image: url("./assets/b3.png");
   background-repeat: repeat;
-  /* // background: linear-gradient(to right,  rgb(182,183,185)0%,  rgb(221,222,224) 20%); */
   }
 
   .size {
-    white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */
-    text-overflow: ellipsis; /* Многоточие */
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
    }
+
+
+   
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(170, 170, 170, 0.788);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+  }
+  
+  ::-webkit-scrollbar-track{
+    border-width:0;
+  }
+  
+  ::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+  }
