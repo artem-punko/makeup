@@ -28,6 +28,27 @@
     background-color: rgba(230, 230, 230, 0.542);
 }
 
+.header-container-third {
+    background-color: rgba(230, 230, 230, 0.542);
+    height: 15%;
+    width: 100%;
+    overflow: auto;
+    margin: 0px;
+}
+
+.left-container {
+    width: 3%;
+    height: 100%;
+    border: 1px solid rgb(230,230,230);
+}
+
+.right-container {
+    /* margin-left: 90%; */
+    width: 3%;
+    border: 1px solid rgb(230,230,230);
+}
+
+
 .example-container-third {
     margin-top: 20%;
     margin-right: 21%;
@@ -37,20 +58,16 @@
     height: 88%;
     border: 1px solid rgb(230,230,230);
     width: 58%;
-    background-color: rgba(230, 230, 230, 0.542);
     margin-bottom: 3%;
   }
-
 .link-to-phone {
     text-decoration: none;
     color: rgb(99, 99, 99);
 }
-
 .link-to-phone:hover {
     text-decoration: none;
     color: rgb(155, 0, 0);
 }
-
 .insight-container {
     height: 50%;
     width: 100%;
@@ -61,7 +78,6 @@
     border-top: 1px solid rgb(230,230,230);
     border-bottom: 1px solid rgb(230,230,230);
 }
-
 ::-webkit-scrollbar{
     width: 5%;
   }
@@ -95,14 +111,12 @@
     overflow: auto;
 
 }
-
 .footer-container {
     background-color: rgba(230, 230, 230, 0.542);
     height: 10%;
     width: 100%;
     overflow: auto;
 }
-
 .circle {
     text-align: center;
     margin-top: 15%;
@@ -112,7 +126,6 @@
     -webkit-border-radius: 30em;
 	-moz-border-radius: 30em;
 }
-
 .social-group {
     margin-left: 5% !important;
     margin-right: 5% !important;
@@ -120,7 +133,6 @@
     vertical-align: middle;
     padding-top: 5%;
 }
-
 .vk {
     width: 100%;
     height: 20%;
@@ -130,7 +142,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .vk:hover {
     width: 100%;
     height: 20%;
@@ -141,7 +152,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .skype {
     width: 100%;
     height: 20%;
@@ -151,7 +161,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .skype:hover {
     width: 100%;
     height: 20%;
@@ -162,7 +171,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .inst {
     width: 100%;
     height: 20%;
@@ -172,7 +180,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .inst:hover {
     width: 100%;
     height: 20%;
@@ -183,7 +190,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .viber {
     width: 100%;
     height: 20%;
@@ -193,8 +199,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
-
 .viber:hover {
     width: 100%;
     height: 20%;
@@ -205,7 +209,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .phone {
     width: 100%;
     height: 20%;
@@ -215,7 +218,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .phone:hover {
     width: 100%;
     height: 20%;
@@ -226,7 +228,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .telegram {
     width: 100%;
     height: 20%;
@@ -236,7 +237,6 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
-
 .telegram:hover {
     width: 100%;
     height: 20%;
@@ -250,22 +250,73 @@
 
 .size-block-for-photo {
     width: 100%;
-    height: 100%;
+    height: 66%;
+    border-top: 1px solid rgb(230,230,230);
+    border-bottom: 1px solid rgb(230,230,230);
+    background-color: rgba(250, 252, 251, 0.337);
+    /* background-color: rgba(230, 230, 230, 0.542); */
     margin-left: 0 !important;
     margin-right: 0 !important;
-
 }
 
 .image-block {
-    height: 28%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    overflow:hidden;
+    height: 46%;
+    width: 23%;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
     text-align: center;
+    
+    border-radius: 5px;
 }
+
+
+
+
+.image-block img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+    
+.image-block img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .image-size {
-
-    width: auto;
+    overflow:hidden;
     height: 100%;
-    
 }
+
+.image-size:hover {
+    height: 100%;
+}
+
+.heart-left {
+    width: 3%;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+.heart-right {
+    position: absolute;
+    margin-left: 92%;
+    width: 3%;
+    margin-top: 3%;
+}
+
+.plus {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;
+    position: absolute;
+    width: 3%;
+}
+

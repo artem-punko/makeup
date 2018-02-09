@@ -1,77 +1,79 @@
-import {Component, OnInit} from '@angular/core';
-import { Gallery} from 'ng-gallery';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   inst = false;
   viber = false;
   telegram = false;
   phone = false;
   vk = false;
   skype = false;
+  left = false;
+  right = false;
+  plus = false;
+  image: any;
 
   images = [
     {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
+      src: '../assets/11.jpg',
+      thumbnail: '../assets/11.jpg',
       text: 'See Sunset View'
     },
     {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
+      src: '../assets/11.jpg',
+      thumbnail: '../assets/11.jpg',
       text: 'See Sunset View'
     },
     {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
+      src: '../assets/11.jpg',
+      thumbnail: '../assets/11.jpg',
       text: 'See Sunset View'
     },
     {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
+      src: '../assets/11.jpg',
+      thumbnail: '../assets/11.jpg',
       text: 'See Sunset View'
     },
     {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
-      text: 'See Sunset View'
-    },
-    {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
-      text: 'See Sunset View'
-    },
-    {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
-      text: 'See Sunset View'
-    },
-    {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
-      text: 'See Sunset View'
-    },
-    {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
-      text: 'See Sunset View'
-    },
-    {
-      src: '../assets/1.jpg',
-      thumbnail: '../assets/1.jpg',
+      src: '../assets/11.jpg',
+      thumbnail: '../assets/11.jpg',
       text: 'See Sunset View'
     }
   ];
 
-  constructor(public gallery: Gallery) {}
+  constructor() { }
 
-  ngOnInit() {
-    this.gallery.load(this.images);
+  plusEvent(event) {
+    this.plus = event;
+  }
 
+  plusEventOut(event) {
+    this.plus = false;
+  }
+
+  clickToImage(image) {
+    this.image = image
+  }
+
+
+  leftEvent(event) {
+    this.left = event;
+  }
+
+  leftEventOut(event) {
+    this.left = false;
+  }
+
+  rightEvent(event) {
+    this.right = event;
+  }
+
+  rightEventOut(event) {
+    this.right = false;
   }
 
   instEvent(event) {
@@ -121,10 +123,6 @@ export class AppComponent implements OnInit {
     this.phone = false;
   }
 
-  clickPhone() {
-    document.getElementById('mymailto').click();
-  }
-
   viberEvent(event) {
     this.viber = event;
   }
@@ -136,18 +134,5 @@ export class AppComponent implements OnInit {
   clickViber() {
     window.open(
       'viber://add?number=%2B375292762060');
-  }
-
-  skypeEvent(event) {
-    this.skype = event;
-  }
-
-  skypeEventOut(event) {
-    this.skype = false;
-  }
-
-  clickSkype() {
-    window.open(
-      'skype:zasranka2497');
   }
 }

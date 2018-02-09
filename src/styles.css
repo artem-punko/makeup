@@ -60,7 +60,7 @@
   html {
   width: 100%;
   height: auto;
-  min-height: 200%;
+  min-height: 120%;
   background-image: url("./assets/b3.png");
   background-repeat: repeat;
   }
