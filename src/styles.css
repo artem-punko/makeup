@@ -5,8 +5,8 @@
   margin-top: -32px;
   margin-left: -32px;
   left: 50%;
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
   transform: rotate(45deg);
   transform-origin: 32px 32px;
   }
@@ -14,9 +14,9 @@
   top: 23px;
   left: 19px;
   position: absolute;
-  width: 26px;
-  height: 26px;
-  background: rgba(148, 0, 0, 0.885);
+  width: 39px;
+  height: 39px;
+  background: rgba(0, 0, 0, 0.672);
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .lds-heart div:after,
@@ -24,16 +24,16 @@
   content: " ";
   position: absolute;
   display: block;
-  width: 26px;
-  height: 26px;
-  background: rgb(131, 0, 0);
+  width: 39px;
+  height: 39px;
+  background: rgb(0, 0, 0);
   }
   .lds-heart div:before {
-  left: -17px;
+  left: -25px;
   border-radius: 50% 0 0 50%;
   }
   .lds-heart div:after {
-  top: -17px;
+  top: -25px;
   border-radius: 50% 50% 0 0;
   }
   @keyframes lds-heart {
@@ -59,10 +59,13 @@
   
   html {
   width: 100%;
-  height: auto;
-  min-height: 120%;
-  background-image: url("./assets/b3.png");
+  height: 100%;
+  background-image: url("./assets/333.png");
   background-repeat: repeat;
+  }
+
+  hr {
+      margin: 0%;
   }
 
   .size {

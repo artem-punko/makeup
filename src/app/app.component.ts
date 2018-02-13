@@ -112,7 +112,7 @@ export class AppComponent {
 
   clickTelegram() {
     window.open(
-      'tg://resolve?domain=artem_punko');
+      'tg://resolve?domain=stribuk_mua');
   }
 
   phoneEvent(event) {

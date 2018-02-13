@@ -1,4 +1,79 @@
-<div class="example-container">
+<router-outlet></router-outlet>
+
+<div class="container-for-social">
+  <div class="block-for-links">
+    <div class="one-social">
+      <a class="link-to-phone" routerLink="/" style="text-decoration: none;">
+        <div tooltip='tooltip' message="Профиль" class="profile"></div>
+      </a>
+    </div>
+    <div class="one-social">
+      <a class="link-to-phone" routerLink="/gallery" style="text-decoration: none;">
+        <div tooltip='tooltip' message="Галерея" class="gallery"></div>
+      </a>
+    </div>
+  </div>
+  <div class="block-for-social">
+    <div class="one-social">
+      <a class="link-to-phone" href="tel:+375292762060" style="text-decoration: none;">
+        <div tooltip='tooltip' message="+375(29)2762060" class="phone"></div>
+      </a>
+    </div>
+    <div class="one-social">
+      <div tooltip='tooltip' (click)="clickInst()" message="stribuk_make_up" class="instagram"></div>
+    </div>
+    <div class="one-social">
+      <div tooltip='tooltip' (click)="clickVk()" message="stribuk_make_up" class="vk"></div>
+    </div>
+
+    <div class="one-social">
+      <div tooltip='tooltip' (click)="clickViber()" message="+375(29)2762060" class="viber"></div>
+    </div>
+    <div class="one-social">
+      <div tooltip='tooltip' (click)="clickTelegram()" message="+375(29)2762060" class="telegram"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="container-for-routing"> -->
+<!-- <div class="photo-container">
+    <img src="../assets/photo1.png" class="photo">
+  </div> -->
+<!-- <div class="about-me-container text-center">
+    <hr>
+    <div class="small-text">свадебный макияж</div>
+    <hr>
+    <div class="small-text">дневной макияж (nude look)</div>
+    <hr>
+    <div class="small-text">голливудский макияж</div>
+    <hr>
+    <div class="small-text">вечерний макияж (smoky eyes)</div>
+    <hr>
+    <div class="small-text">возрастной макияж</div>
+    <hr>
+    <div class="small-text">fashion-макияж</div>
+    <hr>
+  </div> -->
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="example-container">
   <div class="photo-container">
     <div class="text-center">
       <img src="../assets/photo1.png" class="circle">
@@ -50,10 +125,10 @@
 
 <div class="example-container-third">
   <div class="row header-container-third">
-    <!-- <img (mouseover)="leftEvent($event)" (mouseout)="leftEventOut($event)" *ngIf="!left" width="10%" class="heart-left" src="../assets/heart-left1.png">
+    <img (mouseover)="leftEvent($event)" (mouseout)="leftEventOut($event)" *ngIf="!left" width="10%" class="heart-left" src="../assets/heart-left1.png">
     <img (mouseout)="leftEventOut($event)" (mouseover)="leftEvent($event)" *ngIf="left" width="10%" class="heart-left" src="../assets/heart-left.png">
     <img (mouseover)="rightEvent($event)" (mouseout)="rightEventOut($event)" *ngIf="!right" width="10%" class="heart-right" src="../assets/heart-right1.png">
-    <img (mouseout)="rightEventOut($event)" (mouseover)="rightEvent($event)" *ngIf="right" width="10%" class="heart-right" src="../assets/heart-right.png"> -->
+    <img (mouseout)="rightEventOut($event)" (mouseover)="rightEvent($event)" *ngIf="right" width="10%" class="heart-right" src="../assets/heart-right.png">
   </div>
   <div class="row">
     <div class="left-container"></div>
@@ -67,6 +142,5 @@
     <div class="right-container"></div>
     <div *ngIf="image" class="widget ">
     </div>
-    <!-- <div class="row footer-container-third">
+
   </div> -->
-  </div>

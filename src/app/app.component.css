@@ -1,4 +1,193 @@
-.example-container {
+.container-for-social {
+    position: fixed;
+    width: 4%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.2);
+}
+
+.block-for-social {
+    position: fixed;
+    height: 32%;
+    width: 4%;
+    bottom: 0%;
+    
+}
+
+.block-for-links {
+    position: fixed;
+    height: 32%;
+    width: 4%;
+    top: 3%;
+}
+
+.one-social {
+    margin-left: 20%;
+    border:  solid 1px rgba(2, 1, 1, 0);
+    width: 60%;
+    height: 20%;
+}
+
+.profile {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/prof.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.gallery {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/gal1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.vk {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/26.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.instagram {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/12.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.viber {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/23.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.phone {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/25.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.telegram {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/24.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.profile:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/prof1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.vk:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/vkk1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.instagram:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/i1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.viber:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/vi1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+
+
+.phone:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/phone1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.telegram:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/telepho1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+*[tooltip]:hover:after {
+    content: attr(message);
+    background-color: rgba(38, 38, 38, 0.2);
+    margin-left: 250%;
+    height: 100%;
+    width: 400%;
+    padding: 5px;
+    color: white;
+    font-family: Poiret One;
+    border-radius: 10px;
+    font-size: 100%;
+}
+
+.container-for-routing {
+    position: fixed;
+    margin-left: 85%;
+    width: 15%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.2);
+}
+
+
+
+
+
+.history-gallery-container {
+    width: 100%;
+    height: 30%;
+}
+
+.about-me-container {
+    border-left: 1px solid rgba(38, 38, 38, 0.39);
+    border-right: 1px solid rgba(38, 38, 38, 0.39);
+    margin: 5%;
+    background-color: rgba(38, 38, 38, 0.2);
+    font-family: Poiret One;
+}
+
+
+
+/* .example-container {
     margin-top: 3%;
     margin-bottom: 3%;
     margin-left: 3%;
@@ -43,7 +232,6 @@
 }
 
 .right-container {
-    /* margin-left: 90%; */
     width: 3%;
     border: 1px solid rgb(230,230,230);
 }
@@ -254,7 +442,6 @@
     border-top: 1px solid rgb(230,230,230);
     border-bottom: 1px solid rgb(230,230,230);
     background-color: rgba(250, 252, 251, 0.337);
-    /* background-color: rgba(230, 230, 230, 0.542); */
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
@@ -319,4 +506,4 @@
     position: absolute;
     width: 3%;
 }
-
+ */
