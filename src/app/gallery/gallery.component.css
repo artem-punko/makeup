@@ -12,7 +12,7 @@
     top: 49%;
     transform: translateY(-49%);
     position: absolute;
-    margin-left: 97%;
+    right: 0%;
     width: 3%;
     height: 3%;
 }
@@ -199,6 +199,10 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .image-all {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image: url("../../assets/0.png");
 }
 
@@ -211,6 +215,10 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .image-wedding {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image: url("../../assets/6.png");
 }
 
@@ -223,6 +231,10 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .image-day {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image: url("../../assets/2.png");
 }
 
@@ -235,6 +247,10 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .image-hollywood {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image: url("../../assets/10.png");
 }
 
@@ -247,6 +263,10 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .image-smoky {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image: url("../../assets/12.png");
 }
 
@@ -259,6 +279,10 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .image-lifting {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image: url("../../assets/8.png");
 }
 
@@ -271,6 +295,10 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .image-fashion {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image: url("../../assets/4.png");
 }
 
