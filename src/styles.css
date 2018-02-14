@@ -1,102 +1,100 @@
 .lds-heart {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  margin-top: -32px;
-  margin-left: -32px;
-  left: 50%;
-  width: 96px;
-  height: 96px;
-  transform: rotate(45deg);
-  transform-origin: 32px 32px;
-  }
-  .lds-heart div {
-  top: 23px;
-  left: 19px;
-  position: absolute;
-  width: 39px;
-  height: 39px;
-  background: rgba(0, 0, 0, 0.672);
-  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  .lds-heart div:after,
-  .lds-heart div:before {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 39px;
-  height: 39px;
-  background: rgb(0, 0, 0);
-  }
-  .lds-heart div:before {
-  left: -25px;
-  border-radius: 50% 0 0 50%;
-  }
-  .lds-heart div:after {
-  top: -25px;
-  border-radius: 50% 50% 0 0;
-  }
-  @keyframes lds-heart {
-  0% {
-      transform: scale(0.95);
-  }
-  5% {
-      transform: scale(1.1);
-  }
-  39% {
-      transform: scale(0.85);
-  }
-  45% {
-      transform: scale(1);
-  }
-  60% {
-      transform: scale(0.95);
-  }
-  100% {
-      transform: scale(0.9);
-  }
-  }
-  
-  html {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    margin-left: -32px;
+    left: 50%;
+    width: 96px;
+    height: 96px;
+    transform: rotate(45deg);
+    transform-origin: 32px 32px;
+}
+.lds-heart div {
+    top: 23px;
+    left: 19px;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: rgba(0, 0, 0, 0.672);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 39px;
+    height: 39px;
+    background: rgb(0, 0, 0);
+}
+.lds-heart div:before {
+    left: -25px;
+    border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+    top: -25px;
+    border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+    0% {
+        transform: scale(0.95);
+    }
+    5% {
+        transform: scale(1.1);
+    }
+    39% {
+        transform: scale(0.85);
+    }
+    45% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+html {
     width: 100%;
     height: 100%;
-    background-image: url("./assets/14.png");
+    background-image: url("./assets/background.png");
     background-repeat: repeat;
-  }
+}
 
-  hr {
-      margin: 0%;
-  }
+hr {
+    margin: 0%;
+}
 
-  .size {
+.size {
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis; 
-   }
+}
 
-
-   
 ::-webkit-scrollbar{
     width: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
+}
+
+::-webkit-scrollbar-thumb{
     border-width:1px 1px 1px 2px;
     border-color: rgb(0, 0, 0);
     background-color: rgba(170, 170, 170, 0.788);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover{
+}
+
+::-webkit-scrollbar-thumb:hover{
     border-width: 1px 1px 1px 2px;
     border-color: #555;
     background-color: #777;
-  }
-  
-  ::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-track{
     border-width:0;
-  }
-  
-  ::-webkit-scrollbar-track:hover{
+}
+
+::-webkit-scrollbar-track:hover{
     border-left: solid 1px #aaa;
     background-color: #eee;
-  }
+}

@@ -10,7 +10,6 @@
     height: 32%;
     width: 4%;
     bottom: 0%;
-    
 }
 
 .block-for-links {
@@ -31,7 +30,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/prof.png");
+    background-image: url("../assets/profile-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -40,7 +39,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/gal1.png");
+    background-image: url("../assets/gallery-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -49,7 +48,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/26.png");
+    background-image: url("../assets/vk-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -58,7 +57,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/12.png");
+    background-image: url("../assets/instagram-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -67,7 +66,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/23.png");
+    background-image: url("../assets/viber-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
@@ -76,7 +75,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/25.png");
+    background-image: url("../assets/phone-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
@@ -85,7 +84,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/24.png");
+    background-image: url("../assets/telegram-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
@@ -94,7 +93,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/prof1.png");
+    background-image: url("../assets/profile-white.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -104,7 +103,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/vkk1.png");
+    background-image: url("../assets/vk-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -113,7 +112,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/i1.png");
+    background-image: url("../assets/instagram-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -122,18 +121,16 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/vi1.png");
+    background-image: url("../assets/viber-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
-
-
 
 .phone:hover {
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/phone1.png");
+    background-image: url("../assets/phone-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
@@ -142,7 +139,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/telepho1.png");
+    background-image: url("../assets/telegram-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
@@ -168,10 +165,6 @@
     background-color: rgba(38, 38, 38, 0.2);
 }
 
-
-
-
-
 .history-gallery-container {
     width: 100%;
     height: 30%;
@@ -184,326 +177,3 @@
     background-color: rgba(38, 38, 38, 0.2);
     font-family: Poiret One;
 }
-
-
-
-/* .example-container {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 3%;
-    border-radius: 5px;
-    border: 1px solid rgb(230,230,230);
-    width: 15%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-.example-container-second {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-right: 3%;
-    margin-left: 82%;
-    border-radius: 5px;
-    border: 1px solid rgb(230,230,230);
-    width: 15%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(230, 230, 230, 0.542);
-}
-
-.header-container-third {
-    background-color: rgba(230, 230, 230, 0.542);
-    height: 15%;
-    width: 100%;
-    overflow: auto;
-    margin: 0px;
-}
-
-.left-container {
-    width: 3%;
-    height: 100%;
-    border: 1px solid rgb(230,230,230);
-}
-
-.right-container {
-    width: 3%;
-    border: 1px solid rgb(230,230,230);
-}
-
-
-.example-container-third {
-    margin-top: 20%;
-    margin-right: 21%;
-    margin-left: 21%;
-    border-radius: 5px;
-    position: absolute;
-    height: 88%;
-    border: 1px solid rgb(230,230,230);
-    width: 58%;
-    margin-bottom: 3%;
-  }
-.link-to-phone {
-    text-decoration: none;
-    color: rgb(99, 99, 99);
-}
-.link-to-phone:hover {
-    text-decoration: none;
-    color: rgb(155, 0, 0);
-}
-.insight-container {
-    height: 50%;
-    width: 100%;
-    background-color: rgba(250, 252, 251, 0.337);
-    padding-top: 15%;
-    padding-bottom: 15%;
-    overflow: auto;
-    border-top: 1px solid rgb(230,230,230);
-    border-bottom: 1px solid rgb(230,230,230);
-}
-::-webkit-scrollbar{
-    width: 5%;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    border-width:1px 1px 1px 2px;
-    border-color: rgb(0, 0, 0);
-    background-color: rgba(170, 170, 170, 0.788);
-  }
-  
-  ::-webkit-scrollbar-thumb:hover{
-    border-width: 1px 1px 1px 2px;
-    border-color: #555;
-    background-color: #777;
-  }
-  
-  ::-webkit-scrollbar-track{
-    border-width:0;
-  }
-  
-  ::-webkit-scrollbar-track:hover{
-    border-left: solid 1px #aaa;
-    background-color: #eee;
-  }
-
-.photo-container {
-    text-align: center;
-    background-color: rgba(230, 230, 230, 0.542);
-    height: 40%;
-    width: 100%;
-    overflow: auto;
-
-}
-.footer-container {
-    background-color: rgba(230, 230, 230, 0.542);
-    height: 10%;
-    width: 100%;
-    overflow: auto;
-}
-.circle {
-    text-align: center;
-    margin-top: 15%;
-	width: 70%;
-    height: 70%;
-    border-radius: 5px;
-    -webkit-border-radius: 30em;
-	-moz-border-radius: 30em;
-}
-.social-group {
-    margin-left: 5% !important;
-    margin-right: 5% !important;
-    margin-bottom: 5% !important;
-    vertical-align: middle;
-    padding-top: 5%;
-}
-.vk {
-    width: 100%;
-    height: 20%;
-    color: rgb(99, 99, 99);
-    font-family: Caveat;
-    font-size: 23px;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.vk:hover {
-    width: 100%;
-    height: 20%;
-    cursor: pointer;
-    font-family: Caveat;
-    font-size: 23px;
-    color: rgb(155, 0, 0);
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.skype {
-    width: 100%;
-    height: 20%;
-    color: rgb(99, 99, 99);
-    font-family: Caveat;
-    font-size: 23px;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.skype:hover {
-    width: 100%;
-    height: 20%;
-    cursor: pointer;
-    font-family: Caveat;
-    font-size: 23px;
-    color: rgb(155, 0, 0);
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.inst {
-    width: 100%;
-    height: 20%;
-    color: rgb(99, 99, 99);
-    font-family: Caveat;
-    font-size: 23px;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.inst:hover {
-    width: 100%;
-    height: 20%;
-    cursor: pointer;
-    font-family: Caveat;
-    font-size: 23px;
-    color: rgb(155, 0, 0);
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.viber {
-    width: 100%;
-    height: 20%;
-    color: rgb(99, 99, 99);
-    font-family: Caveat;
-    font-size: 23px;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.viber:hover {
-    width: 100%;
-    height: 20%;
-    cursor: pointer;
-    font-family: Caveat;
-    font-size: 23px;
-    color: rgb(155, 0, 0);
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.phone {
-    width: 100%;
-    height: 20%;
-    color: rgb(99, 99, 99);
-    font-family: Caveat;
-    font-size: 23px;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.phone:hover {
-    width: 100%;
-    height: 20%;
-    cursor: pointer;
-    font-family: Caveat;
-    font-size: 23px;
-    color: rgb(155, 0, 0);
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.telegram {
-    width: 100%;
-    height: 20%;
-    color: rgb(99, 99, 99);
-    font-family: Caveat;
-    font-size: 23px;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.telegram:hover {
-    width: 100%;
-    height: 20%;
-    cursor: pointer;
-    font-family: Caveat;
-    font-size: 23px;
-    color: rgb(155, 0, 0);
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-
-.size-block-for-photo {
-    width: 100%;
-    height: 66%;
-    border-top: 1px solid rgb(230,230,230);
-    border-bottom: 1px solid rgb(230,230,230);
-    background-color: rgba(250, 252, 251, 0.337);
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
-.image-block {
-    overflow:hidden;
-    height: 46%;
-    width: 23%;
-    margin-top: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    text-align: center;
-    
-    border-radius: 5px;
-}
-
-
-
-
-.image-block img {
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-    
-.image-block img:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-
-.image-size {
-    overflow:hidden;
-    height: 100%;
-}
-
-.image-size:hover {
-    height: 100%;
-}
-
-.heart-left {
-    width: 3%;
-    margin-left: 1%;
-    margin-top: 3%;
-}
-
-.heart-right {
-    position: absolute;
-    margin-left: 92%;
-    width: 3%;
-    margin-top: 3%;
-}
-
-.plus {
-    text-align: center;
-    margin-left: 5%;
-    margin-top: 10%;
-    position: absolute;
-    width: 3%;
-}
- */
