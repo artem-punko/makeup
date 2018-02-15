@@ -26,6 +26,69 @@
     height: 20%;
 }
 
+.profile:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/profile-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.gallery:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/gallery-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.vk:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/vk-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.instagram:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/instagram-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.viber:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/viber-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.phone:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/phone-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.telegram:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("../assets/telegram-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
 .profile {
     width: 60%;
     height: 60%;
@@ -39,7 +102,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/gallery-white.png");
+    background-image: url("../assets/gallery-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -48,7 +111,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/vk-white.png");
+    background-image: url("../assets/vk-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -57,7 +120,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/instagram-white.png");
+    background-image: url("../assets/instagram-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -66,7 +129,7 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/viber-white.png");
+    background-image: url("../assets/viber-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
@@ -75,67 +138,12 @@
     width: 60%;
     height: 60%;
     margin: 20%;
-    background-image: url("../assets/phone-white.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-} 
-
-.telegram {
-    width: 60%;
-    height: 60%;
-    margin: 20%;
-    background-image: url("../assets/telegram-white.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-} 
-
-.profile:hover {
-    width: 60%;
-    height: 60%;
-    margin: 20%;
-    background-image: url("../assets/profile-white.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-
-.vk:hover {
-    width: 60%;
-    height: 60%;
-    margin: 20%;
-    background-image: url("../assets/vk-red.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.instagram:hover {
-    width: 60%;
-    height: 60%;
-    margin: 20%;
-    background-image: url("../assets/instagram-red.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.viber:hover {
-    width: 60%;
-    height: 60%;
-    margin: 20%;
-    background-image: url("../assets/viber-red.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-} 
-
-.phone:hover {
-    width: 60%;
-    height: 60%;
-    margin: 20%;
     background-image: url("../assets/phone-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 } 
 
-.telegram:hover {
+.telegram {
     width: 60%;
     height: 60%;
     margin: 20%;
@@ -154,7 +162,7 @@
     color: white;
     font-family: Poiret One;
     border-radius: 10px;
-    font-size: 100%;
+    font-size: 1.2vw;
 }
 
 .container-for-routing {

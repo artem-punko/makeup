@@ -15,4 +15,8 @@ export class DataService {
       .map(result => this.result = result.json().data);
   }
 
+  savePhoto(images) {
+    return this._http.post('/api/users', "1111111111111111111111");
+  }
+
 }

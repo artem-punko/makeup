@@ -2,12 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ModuleWithProviders, NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
-import { DataService } from './data.service';
+import { DataService } from './services/data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RouterModule } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
-
+import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
+import {FileUploadModule} from 'primeng/fileupload';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([
   {
@@ -17,6 +18,10 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
   {
     path: '',
     component: ProfileComponent
+  },
+  {
+    path: 'upload',
+    component: UploadPhotoComponent
   }
 ], {});
 
@@ -24,9 +29,11 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
   declarations: [
     AppComponent,
     GalleryComponent,
-    ProfileComponent
+    ProfileComponent,
+    UploadPhotoComponent
   ],
   imports: [
+    FileUploadModule,
     BrowserModule,
     rootRouting,
     HttpModule,
