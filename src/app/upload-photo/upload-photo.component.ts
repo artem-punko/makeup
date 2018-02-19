@@ -1,32 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { DataService } from '../services/data.service';
+import { FileUploader } from 'ng2-file-upload';
 
 @Component({
   selector: 'app-upload-photo',
   templateUrl: './upload-photo.component.html',
-  styleUrls: ['./upload-photo.component.css']
+  styleUrls: ['./upload-photo.component.css'],
 })
-export class UploadPhotoComponent implements OnInit {
-  images: any;
-  formData = new FormData();
 
-  constructor(private dataService: DataService) { }
-
-  ngOnInit() {
-    this.dataService.getUsers().subscribe(success => {
-      console.log(success)
-    })
-  }
-
-  uploadHandler(event) {
-    this.images = event.files;
-    console.log(this.images);
-  }
-
-  sendNewStatus() {
-    for (const image of this.images) {
-      this.formData.append('images', image);
+export class UploadPhotoComponent implements DoCheck {
+  public uploader: FileUploader = new FileUploader({
+    url: 'http://localhost:3000/upload',
+    additionalParameter: {
+      typeCollection: 'all'
     }
-    this.dataService.savePhoto(this.images).subscribe();
+  });
+
+
+  ngDoCheck() {
+    console.log(this.uploader)
   }
+
+
 }

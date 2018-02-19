@@ -16,7 +16,7 @@ export class DataService {
   }
 
   savePhoto(images) {
-    return this._http.post('/api/users', "1111111111111111111111");
+    return this._http.post('/api/users', '1111111111111111111111');
   }
 
 }

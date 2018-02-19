@@ -1,35 +1,86 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
+var multer = require('multer');
+
+let response = {
+    status: 200,
+    data: [],
+    message: null
+};
+
+
 const path = require('path');
 const http = require('http');
-const app = express();
-
-// API file for interacting with MongoDB
 const api = require('./server/routes/api');
+const MongoClient = require('mongodb').MongoClient;
+const ObjectID = require('mongodb').ObjectID;
+const connection = (closure) => {
+    return MongoClient.connect('mongodb://makeup_collection:30secondstomars@ds119258.mlab.com:19258/makeup_collection', (err, db) => {
+        if (err) return console.log(err);
 
-// Parsers
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+        closure(db);
+    });
+};
 
-// Angular DIST output folder
+const sendError = (err, res) => {
+    response.status = 501;
+    response.message = typeof err == 'object' ? err.message : err;
+    res.status(501).json(response);
+};
+
+
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// API location
 app.use('/api', api);
 
-// Send all other requests to the Angular app
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
-app.post('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/index.html'));
+
+app.use(function (req, res, next) {
+    res.setHeader("Access-Control-Allow-Methods", "POST, PUT, OPTIONS, DELETE, GET");
+    res.header("Access-Control-Allow-Origin", "https://stribuk-makeup.herokuapp.com:8080");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Credentials", true);
+    next();
 });
 
-//Set Port
-const port = process.env.PORT || '3001';
-app.set('port', port);
+app.use(express.static('../client'));
+app.use(bodyParser.json());
 
-const server = http.createServer(app);
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, './server/uploads/');
+    },
+    filename: function (req, file, cb) {
+        var datetimestamp = Date.now();
+        cb(null, file.fieldname + '-' + datetimestamp + '.' + file.originalname.split('.')[file.originalname.split('.').length - 1]);
+    }
+});
 
-server.listen(port, () => console.log(`Running on localhost:${port}`));
+var upload = multer({
+    storage: storage
+}).single('file');
+
+
+app.post('/upload', function (req, res) {
+    upload(req, res, function (err) {
+        console.log(req)
+        var myobj = { name: req.file.filename, size: req.file.size, type: req.file.mimetype, destination: req.file.destination, originalname: req.file.originalname, typeCollection: req.body.typeCollection};
+        
+        if (err) {
+            res.json({ error_code: 1, err_desc: err });
+            return;
+        } else {
+            connection((db) => {
+                db.collection('notes').insert(myobj);
+            });
+        }
+    });
+});
+
+app.listen('3000', function () {
+    console.log('running on 3000...');
+});

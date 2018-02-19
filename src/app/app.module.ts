@@ -8,7 +8,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { RouterModule } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
-import {FileUploadModule} from 'primeng/fileupload';
+// import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
+import { FileUploadModule  } from 'ng2-file-upload';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([
   {
@@ -33,7 +34,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
     UploadPhotoComponent
   ],
   imports: [
-    FileUploadModule,
+    FileUploadModule ,
     BrowserModule,
     rootRouting,
     HttpModule,
