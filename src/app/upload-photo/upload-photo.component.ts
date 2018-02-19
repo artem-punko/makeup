@@ -10,7 +10,7 @@ import { FileUploader } from 'ng2-file-upload';
 
 export class UploadPhotoComponent implements DoCheck {
   public uploader: FileUploader = new FileUploader({
-    url: 'https://stribuk-makeup.herokuapp.com:3000/upload',
+    url: './upload',
     additionalParameter: {
       typeCollection: 'all'
     }
