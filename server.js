@@ -81,6 +81,10 @@ app.post('/upload', function (req, res) {
     });
 });
 
-app.listen('3000', function () {
-    console.log('running on 3000...');
-});
+//Set Port
+const port = process.env.PORT || '3000';
+app.set('port', port);
+
+const server = http.createServer(app);
+
+server.listen(port, () => console.log(`Running on localhost:${port}`));
