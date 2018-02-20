@@ -8,18 +8,11 @@ import { FileUploader } from 'ng2-file-upload';
   styleUrls: ['./upload-photo.component.css'],
 })
 
-export class UploadPhotoComponent implements DoCheck {
+export class UploadPhotoComponent {
   public uploader: FileUploader = new FileUploader({
     url: './upload',
     additionalParameter: {
       typeCollection: 'all'
     }
   });
-
-
-  ngDoCheck() {
-    console.log(this.uploader)
-  }
-
-
 }
