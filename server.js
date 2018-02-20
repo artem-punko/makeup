@@ -60,6 +60,10 @@ app.post('/upload', function (req, res) {
     });
 });
 
+app.get('/upload', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+
 app.get('/file/:filename', function (req, res) {
     gfs.collection('notes');
     gfs.files.find({ filename: req.params.filename }).toArray(function (err, files) {
@@ -78,7 +82,7 @@ app.get('/file/:filename', function (req, res) {
     });
 });
 
-const port = process.env.PORT || '3000';
+const port = process.env.PORT || '3001';
 app.set('port', port);
 
 const server = http.createServer(app);
