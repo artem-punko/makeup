@@ -6,7 +6,14 @@
     background-color: rgba(38, 38, 38, 0.2);
     width: 66%;
     height: 80%;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
 }
+
 
 .right-container {
     top: 49%;
@@ -166,6 +173,12 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-color: rgba(38, 38, 38, 0.2);
     transition: 1s;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
 }
 
 .container-for-sort:hover {
@@ -175,6 +188,12 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-color: rgba(38, 38, 38, 0.2);
     transition: 1s;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
 } 
 
 .image {

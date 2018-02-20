@@ -8,6 +8,12 @@
     padding: 5%;
     overflow-y: auto;
     background-color: rgba(38, 38, 38, 0.2);
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
 }
 
 .margin-block {
