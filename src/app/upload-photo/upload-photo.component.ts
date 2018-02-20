@@ -10,7 +10,7 @@ import { FileUploader } from 'ng2-file-upload';
 
 export class UploadPhotoComponent {
   public uploader: FileUploader = new FileUploader({
-    url: './upload',
+    url: '/upload',
     additionalParameter: {
       typeCollection: 'all'
     }
