@@ -7,7 +7,7 @@ import { CloudinaryOptions, CloudinaryUploader } from 'ng2-cloudinary';
   styleUrls: ['./upload-photo.component.css'],
 })
 
-export class UploadPhotoComponent implements OnInit {
+export class UploadPhotoComponent {
 
   imageId: string;
   uploader: CloudinaryUploader = new CloudinaryUploader(
@@ -46,6 +46,7 @@ export class UploadPhotoComponent implements OnInit {
     this.uploader.onSuccessItem = (item: any, response: string, status: number, headers: any): any => {
       const res: any = JSON.parse(response);
       this.imageId = res.public_id;
+      console.log(res)
       this.imageService.savePhoto({
         imageId: this.imageId,
         type: this.typeImage
@@ -56,9 +57,5 @@ export class UploadPhotoComponent implements OnInit {
 
   upload() {
     this.uploader.uploadAll();
-  }
-
-  ngOnInit() {
-    this.imageService.getPhotoByType(2).subscribe();
   }
 }

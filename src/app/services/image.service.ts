@@ -14,8 +14,12 @@ export class ImageService {
     return this.http.get('/image/' + type);
   }
 
+  getAllPhoto() {
+    return this.http.get('/image');
+  }
+
   savePhoto(image) {
-    return this.http.post('/image/', image);
+    return this.http.post('/image', image);
   }
 
 }

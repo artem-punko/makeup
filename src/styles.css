@@ -105,3 +105,8 @@ hr {
     border-left: solid 1px #aaa;
     background-color: #eee;
 }
+
+cl-image img {
+    width: 100%;
+    height: 100%;
+}
