@@ -89,8 +89,6 @@
     width: 66%;
     height: 100%;
 }
-
-
     
 label[for] {
     cursor: pointer;
@@ -106,6 +104,7 @@ input[type="checkbox"] {
 }
 
 .lightbox {
+    background-color: rgba(81, 79, 79, 0.58);
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -122,7 +121,7 @@ input[type="checkbox"] {
 
 .lightbox .sss {
     position: fixed;
-    top: 50%;
+    top: 51%;
     left: 50%;
     max-width: 96%;
     max-height: 96%;
@@ -130,6 +129,20 @@ input[type="checkbox"] {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.lightbox .cross {
+    width: 2%;
+    height: 2%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/cross-white.png");
+    position: fixed;
+    top: 4%;
+    right: 0%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 input[type="checkbox"]:checked + .lightbox {

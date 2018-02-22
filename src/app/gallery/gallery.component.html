@@ -2,8 +2,9 @@
     <div *ngFor="let image of images.products;let i = index">
         <input type="checkbox" id="{{i}}" />
         <label for="{{i}}" class="lightbox">
+            <div class="cross"></div>
             <div class="sss">
-                <cl-image class="mini-photo" width="1000" height="1000" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
+                <cl-image class="mini-photo" width="1500" height="1500" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
             </div>
         </label>
     </div>
