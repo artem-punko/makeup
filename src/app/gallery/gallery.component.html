@@ -1,5 +1,5 @@
 <div class="container-for-gallery">
-    <div *ngFor="let image of images;let i = index">
+    <div *ngFor="let image of images.products;let i = index">
         <input type="checkbox" id="{{i}}" />
         <label for="{{i}}" class="lightbox">
             <div class="sss">
@@ -9,8 +9,8 @@
     </div>
 
     <div class="title-container">
-        <div class="grid">
-            <div *ngFor="let image of images;let i = index" class="grid-item">
+        <div *ngIf="images.products" class="grid">
+            <div *ngFor="let image of images.products;let i = index" class="grid-item">
                 <label for="{{i}}">
                     <div class="ttt">
                         <cl-image class="mini-photo" width="250" height="250" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
@@ -34,7 +34,7 @@
 </div>
 
 <div class="container-for-sort">
-    <a (click)='getAll()'>
+    <a (click)='selectCategory(0)'>
         <div class="all">
             <div class="image ">
                 <div [ngClass]="{'image-all-click': type==0}" class="image-all"></div>
@@ -45,7 +45,7 @@
 
         </div>
     </a>
-    <a (click)='getByType(1)'>
+    <a (click)='selectCategory(1)'>
         <div class="wedding">
             <div class=" image">
                 <div [ngClass]="{'image-wedding-click': type==1}" class="image-wedding"></div>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </a>
-    <a (click)='getByType(2)'>
+    <a (click)='selectCategory(2)'>
         <div class="day">
             <div class="image">
                 <div [ngClass]="{'image-day-click': type==2}" class="image-day"></div>
@@ -65,7 +65,7 @@
             </div>
         </div>
     </a>
-    <a (click)='getByType(3)'>
+    <a (click)='selectCategory(3)'>
         <div class="hollywood">
             <div class=" image">
                 <div [ngClass]="{'image-hollywood-click': type==3}" class="image-hollywood"></div>
@@ -75,7 +75,7 @@
             </div>
         </div>
     </a>
-    <a (click)='getByType(4)'>
+    <a (click)='selectCategory(4)'>
         <div class="smoky">
             <div class=" image">
                 <div [ngClass]="{'image-smoky-click': type==4}" class="image-smoky"></div>
@@ -85,7 +85,7 @@
             </div>
         </div>
     </a>
-    <a (click)='getByType(5)'>
+    <a (click)='selectCategory(5)'>
         <div class="lifting">
             <div class=" image">
                 <div [ngClass]="{'image-lifting-click': type==5}" class="image-lifting"></div>
@@ -95,7 +95,7 @@
             </div>
         </div>
     </a>
-    <a (click)='getByType(6)'>
+    <a (click)='selectCategory(6)'>
         <div class="fashion">
             <div class="image">
                 <div [ngClass]="{'image-fashion-click': type==6}" class="image-fashion"></div>

@@ -16,7 +16,7 @@
 
 
 .right-container {
-    top: 49%;
+    top: 50%;
     transform: translateY(-49%);
     position: absolute;
     right: 0%;
@@ -50,7 +50,7 @@
 }
 
 .left-container {
-    top: 49%;
+    top: 50%;
     transform: translateY(-49%);
     position: absolute;
     width: 3%;
@@ -173,8 +173,9 @@ input[type="checkbox"]:checked ~ .grid {
 .grid .grid-item {
     display: inline-block;
     width: 25%;
-    padding: 16px;
-    padding-top: 32px;
+    height: 50%;
+    padding: 1%;
+    padding-top: 3%;
     opacity: .95;
     -webkit-transition: opacity 1.5s;
     transition: opacity 1.5s;
