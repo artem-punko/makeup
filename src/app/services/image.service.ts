@@ -11,11 +11,11 @@ export class ImageService {
   constructor(private http: HttpClient) { }
 
   getPhotoByType(type) {
-    return this.http.get('/image/' + type);
+    return this.http.get('http://localhost:3001/image/' + type);
   }
 
   getAllPhoto() {
-    return this.http.get('/image');
+    return this.http.get('http://localhost:3001/image');
   }
 
   savePhoto(image) {
