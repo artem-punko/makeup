@@ -2,13 +2,13 @@
 <div class="container-for-social">
   <div class="block-for-links">
     <div class="one-social">
-      <a class="link-to-phone" routerLink="/" style="text-decoration: none;">
-        <div tooltip='tooltip' message="Профиль" class="profile"></div>
+      <a (click)="setType(1)" class="link-to-phone" routerLink="/profile" style="text-decoration: none;">
+        <div  [ngClass]="{'image-profile-click': type==1}" tooltip='tooltip' message="Профиль" class="profile"></div>
       </a>
     </div>
     <div class="one-social">
-      <a class="link-to-phone" routerLink="/gallery" style="text-decoration: none;">
-        <div tooltip='tooltip' message="Галерея" class="gallery"></div>
+      <a (click)="setType(2)" class="link-to-phone" routerLink="/gallery" style="text-decoration: none;">
+        <div  [ngClass]="{'image-gallery-click': type==2}" tooltip='tooltip' message="Галерея" class="gallery"></div>
       </a>
     </div>
   </div>

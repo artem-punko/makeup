@@ -16,6 +16,7 @@ export class AppComponent {
   right = false;
   plus = false;
   image: any;
+  type = 0;
 
   images = [
     {
@@ -134,5 +135,9 @@ export class AppComponent {
   clickViber() {
     window.open(
       'viber://add?number=%2B375292762060');
+  }
+
+  setType(type) {
+    this.type = type;
   }
 }

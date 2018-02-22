@@ -12,6 +12,7 @@ export class GalleryComponent implements OnInit {
     new CloudinaryOptions({ cloudName: 'dhvqokydk', uploadPreset: 'stribuk_makeup' })
   );
   images: any;
+  type = 0;
   constructor(private imageService: ImageService) { }
 
   ngOnInit() {
@@ -19,12 +20,14 @@ export class GalleryComponent implements OnInit {
   }
 
   getByType(type) {
+    this.type = type;
     this.imageService.getPhotoByType(type).subscribe( success => {
       this.images = success;
     });
   }
 
   getAll() {
+    this.type = 0;
     this.imageService.getAllPhoto().subscribe( success => {
       this.images = success;
     });

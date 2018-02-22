@@ -19,7 +19,7 @@ export class ImageService {
   }
 
   savePhoto(image) {
-    return this.http.post('/image', image);
+    return this.http.post('http://localhost:8080/image', image);
   }
 
 }
