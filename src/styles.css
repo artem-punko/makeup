@@ -67,7 +67,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-image: url("./assets/background.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/background.png");
     background-repeat: repeat;
 }
 

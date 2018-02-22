@@ -28,7 +28,7 @@
     width: 100%;
     height: 100%;
     margin: 20%;
-    background-image: url("../../assets/right.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/right.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
 }
@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     margin: 20%;
-    background-image: url("../../assets/right-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/right-red.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     animation-name: myopacity;
@@ -61,7 +61,7 @@
     width: 100%;
     height: 100%;
     margin: 20%;
-    background-image: url("../../assets/left.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/left.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
 }
@@ -70,7 +70,7 @@
     width: 100%;
     height: 100%;
     margin: 20%;
-    background-image: url("../../assets/left-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/left-red.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     opacity: 1;
@@ -269,15 +269,15 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/all-white.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/all-white.png");
 }
 
 .all:hover .image-all {
-    background-image: url("../../assets/all-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/all-red.png");
 }
 
 .image-all-click {
-    background-image: url("../../assets/all-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/all-red.png");
 }
 
 .all {
@@ -301,7 +301,7 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/wed-white.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/wed-white.png");
 }
 
 .wedding:hover .image-wedding {
@@ -309,11 +309,11 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/wed-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/wed-red.png");
 }
 
 .image-wedding-click {
-    background-image: url("../../assets/wed-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/wed-red.png");
 }
 
 .wedding {
@@ -337,7 +337,7 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/girl-white.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/girl-white.png");
 }
 
 .day:hover .image-day {
@@ -345,11 +345,11 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/girl-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/girl-red.png");
 }
 
 .image-day-click {
-    background-image: url("../../assets/girl-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/girl-red.png");
 }
 
 .day {
@@ -373,7 +373,7 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/lips-white.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/lips-white.png");
 }
 
 .hollywood:hover .image-hollywood {
@@ -381,11 +381,11 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/lips-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/lips-red.png");
 }
 
 .image-hollywood-click {
-    background-image: url("../../assets/lips-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/lips-red.png");
 }
 
 
@@ -410,7 +410,7 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/smoky-white.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/smoky-white.png");
 }
 
 .smoky:hover .image-smoky {
@@ -418,11 +418,11 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/smoky-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/smoky-red.png");
 }
 
 .image-smoky-click {
-    background-image: url("../../assets/smoky-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/smoky-red.png");
 }
 
 .smoky {
@@ -446,7 +446,7 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/bab-white.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/bab-white.png");
 }
 
 .lifting:hover .image-lifting {
@@ -454,11 +454,11 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/bab-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/bab-red.png");
 }
 
 .image-lifting-click {
-    background-image: url("../../assets/bab-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/bab-red.png");
 }
 
 .lifting {
@@ -482,18 +482,18 @@ input[type="checkbox"]:checked ~ .grid {
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/fachion-white.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/fachion-white.png");
 }
 .fashion:hover .image-fashion {
     width: 100%;
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/fachion-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/fachion-red.png");
 }
 
 .image-fashion-click {
-    background-image: url("../../assets/fachion-red.png");
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/fachion-red.png");
 }
 
 .fashion {
