@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng build --aot -prod -vc=true && node ./bin/www",
-    "build": "ng build --aot -prod -vc=true",
-    "postinstall": "ng build --aot -prod -vc=true",
+    "start": "ng build && node ./bin/www",
+    "build": "ng build",
+    "postinstall": "ng build --aot -prod --build-optimizer=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
