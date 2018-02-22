@@ -21,13 +21,13 @@
 
 
         <div class="left-container">
-            <div class="arrow-position-left">
+            <div class="arrow-position-left" (click)="back()">
             </div>
         </div>
 
 
         <div class="right-container">
-            <div class="arrow-position-right">
+            <div class="arrow-position-right" (click)="next()">
             </div>
         </div>
     </div>
@@ -37,71 +37,70 @@
     <a (click)='getAll()'>
         <div class="all">
             <div class="image ">
-                <div class="image-all"></div>
+                <div [ngClass]="{'image-all-click': type==0}" class="image-all"></div>
             </div>
-            <div class="text">
+            <div class="text text-all">
                 Все работы
-                <hr>
             </div>
 
         </div>
     </a>
-    <a (click)='getByType("1")'>
+    <a (click)='getByType(1)'>
         <div class="wedding">
             <div class=" image">
-                <div class="image-wedding"></div>
+                <div [ngClass]="{'image-wedding-click': type==1}" class="image-wedding"></div>
             </div>
-            <div class="text">
+            <div class="text text-wedding">
                 Свадебный макияж
             </div>
         </div>
     </a>
-    <a (click)='getByType("2")'>
+    <a (click)='getByType(2)'>
         <div class="day">
-            <div class=" image">
-                <div class="image-day"></div>
+            <div class="image">
+                <div [ngClass]="{'image-day-click': type==2}" class="image-day"></div>
             </div>
-            <div class="text">
+            <div class="text text-day">
                 Дневной макияж
             </div>
         </div>
     </a>
-    <a (click)='getByType("3")'>
+    <a (click)='getByType(3)'>
         <div class="hollywood">
             <div class=" image">
-                <div class="image-hollywood"></div>
+                <div [ngClass]="{'image-hollywood-click': type==3}" class="image-hollywood"></div>
             </div>
-            <div class="text">
+            <div class="text text-hollywood">
                 Голливудский макияж
             </div>
         </div>
     </a>
-    <a (click)='getByType("4")'>
+    <a (click)='getByType(4)'>
         <div class="smoky">
             <div class=" image">
-                <div class="image-smoky"></div>
+                <div [ngClass]="{'image-smoky-click': type==4}" class="image-smoky"></div>
             </div>
-            <div class="text">
+            <div class="text text-smoky">
                 Вечерний макияж
             </div>
         </div>
     </a>
-    <a (click)='getByType("5")'>
+    <a (click)='getByType(5)'>
         <div class="lifting">
             <div class=" image">
-                <div class="image-lifting"></div>
+                <div [ngClass]="{'image-lifting-click': type==5}" class="image-lifting"></div>
             </div>
-            <div class="text">
+            <div class="text text-lifting">
                 Возрастной макияж
             </div>
         </div>
     </a>
-    <a (click)='getByType("6")'>
+    <a (click)='getByType(6)'>
         <div class="fashion">
             <div class="image">
-                <div class="image-fashion"></div>
+                <div [ngClass]="{'image-fashion-click': type==6}" class="image-fashion"></div>
             </div>
-            <div class="text">
+            <div class="text text-fashion">
                 Fashion-макияж
             </div>
         </div>

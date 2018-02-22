@@ -33,6 +33,22 @@
     background-size: auto 100%;
 }
 
+.arrow-position-right:hover {
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+    background-image: url("../../assets/right-red.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.4s; 
+    -webkit-animation-duration: 0.4s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    cursor: pointer;
+}
+
 .left-container {
     top: 49%;
     transform: translateY(-49%);
@@ -50,11 +66,28 @@
     background-size: auto 100%;
 }
 
+.arrow-position-left:hover {
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+    background-image: url("../../assets/left-red.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    opacity: 1;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.4s; 
+    -webkit-animation-duration: 0.4s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    cursor: pointer;
+}
+
 .center-container {
     top: 5%;
     position: fixed;
     width: 66%;
-    height: 90%;
+    height: 100%;
 }
 
 
@@ -233,9 +266,17 @@ input[type="checkbox"]:checked ~ .grid {
 .image-all {
     width: 100%;
     height: 100%;
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/0.png");
+    background-image: url("../../assets/all-white.png");
+}
+
+.all:hover .image-all {
+    background-image: url("../../assets/all-red.png");
+}
+
+.image-all-click {
+    background-image: url("../../assets/all-red.png");
 }
 
 .all {
@@ -246,12 +287,32 @@ input[type="checkbox"]:checked ~ .grid {
     height: 10%;
 }
 
+.all:hover {
+    cursor: pointer;
+}
+
+.all:hover .text-all {
+    color: #8D1A1A;
+}
+
 .image-wedding {
     width: 100%;
     height: 100%;
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/6.png");
+    background-image: url("../../assets/wed-white.png");
+}
+
+.wedding:hover .image-wedding {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/wed-red.png");
+}
+
+.image-wedding-click {
+    background-image: url("../../assets/wed-red.png");
 }
 
 .wedding {
@@ -263,20 +324,31 @@ input[type="checkbox"]:checked ~ .grid {
 }
 
 .wedding:hover {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
-    width: 100%;
-    height: 10%;
     cursor: pointer;
+}
+
+.wedding:hover .text-wedding {
+    color: #8D1A1A;
 }
 
 .image-day {
     width: 100%;
     height: 100%;
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/2.png");
+    background-image: url("../../assets/girl-white.png");
+}
+
+.day:hover .image-day {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/girl-red.png");
+}
+
+.image-day-click {
+    background-image: url("../../assets/girl-red.png");
 }
 
 .day {
@@ -287,13 +359,34 @@ input[type="checkbox"]:checked ~ .grid {
     height: 10%;
 }
 
+.day:hover {
+    cursor: pointer;
+}
+
+.day:hover .text-day {
+    color: #8D1A1A;
+}
+
 .image-hollywood {
     width: 100%;
     height: 100%;
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/10.png");
+    background-image: url("../../assets/lips-white.png");
 }
+
+.hollywood:hover .image-hollywood {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/lips-red.png");
+}
+
+.image-hollywood-click {
+    background-image: url("../../assets/lips-red.png");
+}
+
 
 .hollywood {
     position: absolute;
@@ -303,12 +396,32 @@ input[type="checkbox"]:checked ~ .grid {
     height: 10%;
 }
 
+.hollywood:hover {
+    cursor: pointer;
+}
+
+.hollywood:hover .text-hollywood {
+    color: #8D1A1A;
+}
+
 .image-smoky {
     width: 100%;
     height: 100%;
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/12.png");
+    background-image: url("../../assets/smoky-white.png");
+}
+
+.smoky:hover .image-smoky {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/smoky-red.png");
+}
+
+.image-smoky-click {
+    background-image: url("../../assets/smoky-red.png");
 }
 
 .smoky {
@@ -319,12 +432,32 @@ input[type="checkbox"]:checked ~ .grid {
     height: 10%;
 }
 
+.smoky:hover {
+    cursor: pointer;
+}
+
+.smoky:hover .text-smoky {
+    color: #8D1A1A;
+}
+
 .image-lifting {
     width: 100%;
     height: 100%;
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/8.png");
+    background-image: url("../../assets/bab-white.png");
+}
+
+.lifting:hover .image-lifting {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/bab-red.png");
+}
+
+.image-lifting-click {
+    background-image: url("../../assets/bab-red.png");
 }
 
 .lifting {
@@ -335,12 +468,31 @@ input[type="checkbox"]:checked ~ .grid {
     height: 10%;
 }
 
+.lifting:hover {
+    cursor: pointer;
+}
+
+.lifting:hover .text-lifting {
+    color: #8D1A1A;
+}
+
 .image-fashion {
     width: 100%;
     height: 100%;
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("../../assets/4.png");
+    background-image: url("../../assets/fachion-white.png");
+}
+.fashion:hover .image-fashion {
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/fachion-red.png");
+}
+
+.image-fashion-click {
+    background-image: url("../../assets/fachion-red.png");
 }
 
 .fashion {
@@ -351,7 +503,13 @@ input[type="checkbox"]:checked ~ .grid {
     height: 10%;
 }
 
+.fashion:hover {
+    cursor: pointer;
+}
 
+.fashion:hover .text-fashion {
+    color: #8D1A1A;
+}
 
 .heart {
     position: absolute;
