@@ -1,11 +1,11 @@
 .container-for-gallery {
     border-radius: 5px;
-    top: 10%;
+    top: 15%;
     position: fixed;
     margin-left: 17%;
     background-color: rgba(38, 38, 38, 0.2);
     width: 66%;
-    height: 80%;
+    height: 70%;
     animation-name: myopacity;
     -webkit-animation-name: myopacity; 
     animation-duration: 0.5s; 
@@ -177,7 +177,9 @@ input[type="checkbox"]:checked ~ .grid {
     align-content: flex-start;
     z-index: 0;
     height: auto;
-    padding: 16px;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     overflow: hidden;
     text-align: center;
     -webkit-transition: opacity .75s;
@@ -527,34 +529,28 @@ input[type="checkbox"]:checked ~ .grid {
 
 .heart {
     position: absolute;
-    top: 95%;
-    left: 60%;
-    transform: translateY(-95%);
+    top: 93%;
+    left: 50%;
+    transform: translateY(-93%);
 }
 
-.lds-heart {
+.lds-heart1 {
     display: inline-block;
     position: absolute;
-    top: 50%;
-    margin-top: -32px;
-    margin-left: -32px;
-    left: 50%;
     width: 48;
     height: 48;
     transform: rotate(45deg);
     transform-origin: 16px 16px;
 }
-.lds-heart div {
-    top: 23px;
-    left: 19px;
+.lds-heart1 div {
     position: absolute;
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.672);
-    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: lds-heart1 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.lds-heart div:after,
-.lds-heart div:before {
+.lds-heart1 div:after,
+.lds-heart1 div:before {
     content: " ";
     position: absolute;
     display: block;
@@ -562,15 +558,15 @@ input[type="checkbox"]:checked ~ .grid {
     height: 20px;
     background: rgb(255, 255, 255);
 }
-.lds-heart div:before {
+.lds-heart1 div:before {
     left: -12px;
     border-radius: 50% 0 0 50%;
 }
-.lds-heart div:after {
+.lds-heart1 div:after {
     top: -12px;
     border-radius: 50% 50% 0 0;
 }
-@keyframes lds-heart {
+@keyframes lds-heart1 {
     0% {
         transform: scale(0.95);
     }

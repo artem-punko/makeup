@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   inst = false;
   viber = false;
   telegram = false;
@@ -17,7 +17,6 @@ export class AppComponent {
   plus = false;
   image: any;
   type = 0;
-
   images = [
     {
       src: '../assets/11.jpg',
@@ -47,6 +46,7 @@ export class AppComponent {
   ];
 
   constructor() { }
+
 
   plusEvent(event) {
     this.plus = event;
