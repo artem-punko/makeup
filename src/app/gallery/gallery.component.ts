@@ -25,7 +25,7 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
     this.images = new Image();
     this.getAll();
-  }
+  } 
 
   next() {
     if (this.images.pages < this.page + 1) {
