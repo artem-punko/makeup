@@ -5,7 +5,7 @@ import { CloudinaryOptions, CloudinaryUploader } from 'ng2-cloudinary';
 class Image {
   products: Array<any>;
   pages: Number;
-  current: Number;
+  current: Number; 
 };
 
 @Component({
