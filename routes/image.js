@@ -9,6 +9,7 @@ router.get('/:page', function (req, res, next) {
   var page = req.params.page || 0;
   Image
     .find({})
+    .sort({ $natural: -1 })
     .skip((perPage * page) - perPage)
     .limit(perPage)
     .exec(function (err, products) {
@@ -28,6 +29,7 @@ router.get('/:type/:page', function (req, res, next) {
   var page = req.params.page || 0;
   Image
     .find({ type: req.params.type })
+    .sort({ $natural: -1 })
     .skip((perPage * page) - perPage)
     .limit(perPage)
     .exec(function (err, products) {
