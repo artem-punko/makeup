@@ -1,35 +1,80 @@
 <router-outlet></router-outlet>
-<div class="container-for-social">
-  <div class="block-for-links">
-    <div class="one-social">
-      <a (click)="setType(1)" class="link-to-phone" routerLink="/profile" style="text-decoration: none;">
-        <div  [ngClass]="{'image-profile-click': type==1}" tooltip='tooltip' message="Профиль" class="profile"></div>
-      </a>
+
+
+
+<div class="hidden-xs-down">
+  <div class="container-for-social ">
+    <div class="block-for-links">
+      <div class="one-social">
+        <a (click)="setType(1)" class="link-to-phone" routerLink="/profile" style="text-decoration: none;">
+          <div [ngClass]="{'image-profile-click': type==1}" tooltip='tooltip' message="Профиль" class="profile"></div>
+        </a>
+      </div>
+      <div class="one-social">
+        <a (click)="setType(2)" class="link-to-phone" routerLink="/gallery" style="text-decoration: none;">
+          <div [ngClass]="{'image-gallery-click': type==2}" tooltip='tooltip' message="Галерея" class="gallery"></div>
+        </a>
+      </div>
     </div>
-    <div class="one-social">
-      <a (click)="setType(2)" class="link-to-phone" routerLink="/gallery" style="text-decoration: none;">
-        <div  [ngClass]="{'image-gallery-click': type==2}" tooltip='tooltip' message="Галерея" class="gallery"></div>
-      </a>
+    <div class="block-for-social">
+      <div class="one-social">
+        <a class="link-to-phone" href="tel:+375292762060" style="text-decoration: none;">
+          <div tooltip='tooltip' message="+375(29)2762060" class="phone"></div>
+        </a>
+      </div>
+      <div class="one-social">
+        <div tooltip='tooltip' (click)="clickInst()" message="stribuk_make_up" class="instagram"></div>
+      </div>
+      <div class="one-social">
+        <div tooltip='tooltip' (click)="clickVk()" message="stribuk_make_up" class="vk"></div>
+      </div>
+
+      <div class="one-social">
+        <div tooltip='tooltip' (click)="clickViber()" message="+375(29)2762060" class="viber"></div>
+      </div>
+      <div class="one-social">
+        <div tooltip='tooltip' (click)="clickTelegram()" message="+375(29)2762060" class="telegram"></div>
+      </div>
     </div>
   </div>
-  <div class="block-for-social">
-    <div class="one-social">
-      <a class="link-to-phone" href="tel:+375292762060" style="text-decoration: none;">
-        <div tooltip='tooltip' message="+375(29)2762060" class="phone"></div>
-      </a>
-    </div>
-    <div class="one-social">
-      <div tooltip='tooltip' (click)="clickInst()" message="stribuk_make_up" class="instagram"></div>
-    </div>
-    <div class="one-social">
-      <div tooltip='tooltip' (click)="clickVk()" message="stribuk_make_up" class="vk"></div>
-    </div>
+</div>
 
-    <div class="one-social">
-      <div tooltip='tooltip' (click)="clickViber()" message="+375(29)2762060" class="viber"></div>
-    </div>
-    <div class="one-social">
-      <div tooltip='tooltip' (click)="clickTelegram()" message="+375(29)2762060" class="telegram"></div>
+
+
+<div class="hidden-sm-up">
+  <div class="block-for-links-mobile">
+    <div class="one-social-links-mobile">
+          <a (click)="setType(1)" class="link-to-phone" routerLink="/profile" style="text-decoration: none;">
+            <div [ngClass]="{'image-profile-click-mobile': type==1}" class="profile-mobile"></div>
+          </a>
+        </div>
+        <div class="one-social-links-mobile">
+          <a (click)="setType(2)" class="link-to-phone" routerLink="/gallery" style="text-decoration: none;">
+            <div [ngClass]="{'image-gallery-click-mobile': type==2}" class="gallery-mobile"></div>
+          </a>
+        </div>
+  </div>
+  <div class="container-for-social-mobile">
+
+    <div class="block-for-social-mobile">
+      <div class="one-social-mobile">
+        <a class="link-to-phone" href="tel:+375292762060" style="text-decoration: none;">
+          <div class="phone-mobile"></div>
+        </a>
+      </div>
+      <div class="one-social-mobile">
+        <div (click)="clickInst()" class="instagram-mobile"></div>
+      </div>
+      <div class="one-social-mobile">
+        <div (click)="clickVk()" class="vk-mobile"></div>
+      </div>
+
+      <div class="one-social-mobile">
+        <div (click)="clickViber()" class="viber-mobile"></div>
+      </div>
+      <div class="one-social-mobile">
+        <div (click)="clickTelegram()" class="telegram-mobile"></div>
+      </div>
     </div>
   </div>
 </div>

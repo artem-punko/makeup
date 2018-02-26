@@ -90,11 +90,11 @@
     height: 100%;
 }
     
-label[for] {
+label[for].d {
     cursor: pointer;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"].c {
     display: none;
 }
 
@@ -145,13 +145,13 @@ input[type="checkbox"] {
     transform: translate(-50%, -50%);
 }
 
-input[type="checkbox"]:checked + .lightbox {
+input[type="checkbox"].c:checked + .lightbox {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
 }
 
-input[type="checkbox"]:checked ~ .grid {
+input[type="checkbox"].c:checked ~ .grid {
     opacity: .125;
 }
 

@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css']
+  styleUrls: ['app.component.css', 'app-mobile.component.css']
 })
-export class AppComponent{
+export class AppComponent {
   inst = false;
   viber = false;
   telegram = false;

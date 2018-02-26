@@ -5,13 +5,13 @@ import { CloudinaryOptions, CloudinaryUploader } from 'ng2-cloudinary';
 class Image {
   products: Array<any>;
   pages: Number;
-  current: Number; 
+  current: Number;
 };
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css']
+  styleUrls: [ './gallery-mobile.component.css', './gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
   uploader: CloudinaryUploader = new CloudinaryUploader(
@@ -25,7 +25,7 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
     this.images = new Image();
     this.getAll();
-  } 
+  }
 
   next() {
     if (this.images.pages < this.page + 1) {
@@ -33,7 +33,7 @@ export class GalleryComponent implements OnInit {
     } else {
       this.page = this.page + 1;
     }
-    if (this.type == 0) {
+    if (this.type === 0) {
       this.getAll();
     } else {
       this.getByType()
@@ -41,12 +41,12 @@ export class GalleryComponent implements OnInit {
   }
 
   back() {
-    if (0 == this.page - 1) {
+    if (0 === this.page - 1) {
       this.page = this.images.pages;
     } else {
       this.page = this.page - 1;
     }
-    if (this.type == 0) {
+    if (this.type === 0) {
       this.getAll();
     } else {
       this.getByType()
@@ -56,7 +56,7 @@ export class GalleryComponent implements OnInit {
   selectCategory(type) {
     this.page = 1;
     this.type = type;
-    if (this.type == 0) {
+    if (this.type === 0) {
       this.getAll();
     } else {
       this.getByType()

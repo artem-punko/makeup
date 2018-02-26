@@ -1,0 +1,154 @@
+.container-for-social-mobile {
+    position: fixed;
+    top: 94%;
+    height: 6%;
+    width: 100%;
+    background-color: rgba(38, 38, 38, 0.2);
+}
+
+.block-for-social-mobile {
+    text-align: -webkit-center;
+    position: fixed;
+    top: 94%;
+    height: 6%;
+    width: 100%;
+}
+
+.one-social-mobile {
+    width: 19%;
+    height: 100%;
+    display:inline-block;
+}
+
+.phone-mobile {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/phone-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.telegram-mobile {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/telegram-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.vk-mobile {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/vk-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.instagram-mobile {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/instagram-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.viber-mobile {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/viber-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+
+.vk-mobile:hover {
+    width: 40%;
+    height: 100%;
+    /* margin-top: 9%; */
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/vk-red.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.instagram-mobile:hover {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/instagram-red.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.viber-mobile:hover {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/viber-red.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.phone-mobile:hover {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/phone-red.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.telegram-mobile:hover {
+    width: 40%;
+    height: 100%;
+    margin-top: 9%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/telegram-red.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+.block-for-links-mobile {
+    position: fixed;
+    height: 10%;
+    width: 10%;
+    top: 2%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(38, 38, 38, 0.2);
+}
+
+.one-social-links-mobile {
+    width: 100%;
+    height: 48%;
+    text-align: -webkit-center;
+}
+
+.profile-mobile {
+    width: 60%;
+    height: 60%;
+    margin-top: 15%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/profile-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.gallery-mobile {
+    width: 60%;
+    height: 60%;
+    margin-top: 15%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/gallery-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image-profile-click-mobile {
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/profile-red.png");
+}
+
+.image-gallery-click-mobile {
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/gallery-red.png");
+}

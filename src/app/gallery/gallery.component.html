@@ -1,114 +1,154 @@
-<div class="container-for-gallery">
-    <div *ngFor="let image of images.products;let i = index">
-        <input type="checkbox" id="{{i}}" />
-        <label for="{{i}}" class="lightbox">
-            <div class="cross"></div>
-            <div class="sss">
-                <cl-image class="mini-photo" width="1500" height="1500" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
+<div  class="hidden" style="visibility: hidden">
+    <div class="container-for-gallery">
+        <div *ngFor="let image of images.products;let i = index">
+            <input type="checkbox"  class="c" id="{{i}}" />
+            <label for="{{i}}"  class="d" class="lightbox">
+                <div class="cross"></div>
+                <div class="sss">
+                    <cl-image class="mini-photo" width="1500" height="1500" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
+                </div>
+            </label>
+        </div>
+  
+        <div class="title-container">
+            <div *ngIf="images.products" class="grid">
+                <div *ngFor="let image of images.products;let i = index" class="grid-item">
+                    <label for="{{i}}">
+                        <div class="ttt">
+                            <cl-image class="mini-photo" width="250" height="250" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
+                        </div>
+                    </label>
+                </div>
             </div>
-        </label>
+
+
+            <div class="left-container">
+                <div class="arrow-position-left" (click)="back()">
+                </div>
+            </div>
+
+
+            <div class="right-container">
+                <div class="arrow-position-right" (click)="next()">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="title-container">
-        <div *ngIf="images.products" class="grid">
-            <div *ngFor="let image of images.products;let i = index" class="grid-item">
-                <label for="{{i}}">
-                    <div class="ttt">
-                        <cl-image class="mini-photo" width="250" height="250" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
-                    </div>
-                </label>
+    <div class="container-for-sort">
+        <a (click)='selectCategory(0)'>
+            <div class="all">
+                <div class="image ">
+                    <div [ngClass]="{'image-all-click': type==0}" class="image-all"></div>
+                </div>
+                <div class="text text-all">
+                    Все работы
+                </div>
+
             </div>
-        </div>
-
-
-        <div class="left-container">
-            <div class="arrow-position-left" (click)="back()">
+        </a>
+        <a (click)='selectCategory(1)'>
+            <div class="wedding">
+                <div class=" image">
+                    <div [ngClass]="{'image-wedding-click': type==1}" class="image-wedding"></div>
+                </div>
+                <div class="text text-wedding">
+                    Свадебный макияж
+                </div>
             </div>
-        </div>
-
-
-        <div class="right-container">
-            <div class="arrow-position-right" (click)="next()">
+        </a>
+        <a (click)='selectCategory(2)'>
+            <div class="day">
+                <div class="image">
+                    <div [ngClass]="{'image-day-click': type==2}" class="image-day"></div>
+                </div>
+                <div class="text text-day">
+                    Дневной макияж
+                </div>
+            </div>
+        </a>
+        <a (click)='selectCategory(3)'>
+            <div class="hollywood">
+                <div class=" image">
+                    <div [ngClass]="{'image-hollywood-click': type==3}" class="image-hollywood"></div>
+                </div>
+                <div class="text text-hollywood">
+                    Голливудский макияж
+                </div>
+            </div>
+        </a>
+        <a (click)='selectCategory(4)'>
+            <div class="smoky">
+                <div class=" image">
+                    <div [ngClass]="{'image-smoky-click': type==4}" class="image-smoky"></div>
+                </div>
+                <div class="text text-smoky">
+                    Вечерний макияж
+                </div>
+            </div>
+        </a>
+        <a (click)='selectCategory(5)'>
+            <div class="lifting">
+                <div class=" image">
+                    <div [ngClass]="{'image-lifting-click': type==5}" class="image-lifting"></div>
+                </div>
+                <div class="text text-lifting">
+                    Возрастной макияж
+                </div>
+            </div>
+        </a>
+        <a (click)='selectCategory(6)'>
+            <div class="fashion">
+                <div class="image">
+                    <div [ngClass]="{'image-fashion-click': type==6}" class="image-fashion"></div>
+                </div>
+                <div class="text text-fashion">
+                    Fashion-макияж
+                </div>
+            </div>
+        </a>
+        <div class="heart">
+            <div class="lds-heart1">
+                <div></div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-for-sort">
-    <a (click)='selectCategory(0)'>
-        <div class="all">
-            <div class="image ">
-                <div [ngClass]="{'image-all-click': type==0}" class="image-all"></div>
-            </div>
-            <div class="text text-all">
-                Все работы
+
+<div class="hidden-sm-up">
+    <div class="container-for-gallery-mobile">
+        <div *ngFor="let image of images.products;let i = index">
+            <input type="checkbox" class="a" id="{{i}}" />
+            <label style="width: 100%; height: 100%;" for="{{i}}" class="b" class="lightbox-mobile">
+                <div class="sss-mobile">
+                    <cl-image class="mini-photo" width="1500" height="1500" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
+                </div>
+            </label>
+        </div>
+
+        <div  class="title-container-mobile">
+            <div *ngIf="images.products" class="grid-mobile">
+                <div *ngFor="let image of images.products;let i = index" class="grid-item-mobile">
+                    <label style="width: 100%; height: 100%;" for="{{i}}">
+                        <div class="ttt-mobile">
+                            <cl-image class="mini-photo" width="150" height="150" crop="fill" gravity="auto" [public-id]="image.imageId" [cloud-name]="uploader.cloudName"></cl-image>
+                        </div>
+                    </label>
+                </div>
             </div>
 
-        </div>
-    </a>
-    <a (click)='selectCategory(1)'>
-        <div class="wedding">
-            <div class=" image">
-                <div [ngClass]="{'image-wedding-click': type==1}" class="image-wedding"></div>
+
+            <!-- <div class="left-container-mobile">
+                <div class="arrow-position-left-mobile" (click)="back()">
+                </div>
             </div>
-            <div class="text text-wedding">
-                Свадебный макияж
-            </div>
-        </div>
-    </a>
-    <a (click)='selectCategory(2)'>
-        <div class="day">
-            <div class="image">
-                <div [ngClass]="{'image-day-click': type==2}" class="image-day"></div>
-            </div>
-            <div class="text text-day">
-                Дневной макияж
-            </div>
-        </div>
-    </a>
-    <a (click)='selectCategory(3)'>
-        <div class="hollywood">
-            <div class=" image">
-                <div [ngClass]="{'image-hollywood-click': type==3}" class="image-hollywood"></div>
-            </div>
-            <div class="text text-hollywood">
-                Голливудский макияж
-            </div>
-        </div>
-    </a>
-    <a (click)='selectCategory(4)'>
-        <div class="smoky">
-            <div class=" image">
-                <div [ngClass]="{'image-smoky-click': type==4}" class="image-smoky"></div>
-            </div>
-            <div class="text text-smoky">
-                Вечерний макияж
-            </div>
-        </div>
-    </a>
-    <a (click)='selectCategory(5)'>
-        <div class="lifting">
-            <div class=" image">
-                <div [ngClass]="{'image-lifting-click': type==5}" class="image-lifting"></div>
-            </div>
-            <div class="text text-lifting">
-                Возрастной макияж
-            </div>
-        </div>
-    </a>
-    <a (click)='selectCategory(6)'>
-        <div class="fashion">
-            <div class="image">
-                <div [ngClass]="{'image-fashion-click': type==6}" class="image-fashion"></div>
-            </div>
-            <div class="text text-fashion">
-                Fashion-макияж
-            </div>
-        </div>
-    </a>
-    <div class="heart">
-        <div class="lds-heart1">
-            <div></div>
+
+
+            <div class="right-container-mobile">
+                <div class="arrow-position-right-mobile" (click)="next()">
+                </div>
+            </div> -->
         </div>
     </div>
 </div>

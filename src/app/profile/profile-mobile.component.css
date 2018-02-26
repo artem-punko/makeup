@@ -1,0 +1,35 @@
+
+.container-for-photo-mobile {
+    margin-top: 5%;
+    position: fixed;
+    margin-left: 30%;
+    width: 40%;
+    height: 40%;
+}
+
+.photo-mobile {
+    text-align: center;
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.photo-container-mobile {
+    width: 100%;
+}
+
+.container-for-content-mobile {
+    border-radius: 5px;
+    margin-top: 35%;
+    position: fixed;
+    margin-left: 6%;
+    background-color: rgba(38, 38, 38, 0.2);
+    width: 88%;
+    height: 70%;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+}
