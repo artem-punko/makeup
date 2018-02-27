@@ -2,9 +2,17 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var Image = require('../models/Image.js');
+var cloudinary = require('cloudinary');
 
+
+cloudinary.config({ 
+  cloud_name: 'dhvqokydk', 
+  api_key: '557163583743686', 
+  api_secret: '7Pwn18CDbFtGOGu5Lt99riL7Byo' 
+});
 /* GET ALL BOOKS */
 router.get('/:page', function (req, res, next) {
+
   var perPage = 8;
   var page = req.params.page || 0;
   Image
@@ -61,9 +69,11 @@ router.put('/image', function (req, res, next) {
 });
 
 /* DELETE BOOK */
-router.delete('/:id', function (req, res, next) {
+router.delete('/:type', function (req, res, next) {
+  cloudinary.uploader.destroy(req.params.type, { 
+     });
 
-  Image.findByIdAndRemove(req.params.id, req.body, function (err, post) {
+  Image.findOneAndRemove(req.params.type, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });

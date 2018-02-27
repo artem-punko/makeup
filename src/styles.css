@@ -105,9 +105,3 @@ hr {
     border-left: solid 1px #aaa;
     background-color: #eee;
 }
-
-cl-image img {
-    
-    width: auto;
-    height: 100%;
-}

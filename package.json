@@ -28,6 +28,7 @@
     "@ng-bootstrap/ng-bootstrap": "^1.0.0",
     "body-parser": "^1.14.1",
     "bootstrap": "^4.0.0-alpha.6",
+    "cloudinary": "^1.10.0",
     "core-js": "^2.5.3",
     "express": "^4.13.3",
     "jquery": "^3.3.1",

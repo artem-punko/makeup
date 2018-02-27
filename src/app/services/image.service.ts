@@ -20,4 +20,9 @@ export class ImageService {
     return this.http.post('http://localhost:3001/image', image);
   }
 
+  deletePhoto(id) {
+    return this.http.delete('http://localhost:3001/image/' + id);
+
+  }
+
 }

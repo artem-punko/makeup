@@ -60,3 +60,20 @@
 .upload-button:hover {
     background-color: #820000af;
 }
+
+.item_image {
+    margin: 2%;
+    width: 21%;
+    height: auto;
+    display: inline-block;
+}
+
+.cross {
+    width: 2%;
+    height: 2%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/cross-white.png");
+    position: absolute;
+    cursor: pointer;
+}
