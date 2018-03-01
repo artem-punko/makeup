@@ -7,12 +7,12 @@ var cloudinary = require('cloudinary');
 
 cloudinary.config({ 
   cloud_name: 'dhvqokydk', 
-  api_key: '557163583743686', 
+  api_key: '557163583743686',
   api_secret: '7Pwn18CDbFtGOGu5Lt99riL7Byo' 
 });
-/* GET ALL BOOKS */
-router.get('/:page', function (req, res, next) {
 
+
+router.get('/:page', function (req, res, next) {
   var perPage = 8;
   var page = req.params.page || 0;
   Image
@@ -31,7 +31,7 @@ router.get('/:page', function (req, res, next) {
       });
     });
 });
-/* GET SINGLE BOOK BY TYPE */
+
 router.get('/:type/:page', function (req, res, next) {
   var perPage = 8;
   var page = req.params.page || 0;
@@ -52,7 +52,6 @@ router.get('/:type/:page', function (req, res, next) {
     });
 });
 
-/* SAVE BOOK */
 router.post('/', function (req, res, next) {
   Image.create(req.body, function (err, post) {
     if (err) return next(err);
@@ -60,22 +59,13 @@ router.post('/', function (req, res, next) {
   });
 });
 
-/* UPDATE BOOK */
-router.put('/image', function (req, res, next) {
-  Image.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+router.delete('/:id/:type', function (req, res, next) {
+  Image.findOneAndRemove({_id : new mongoose.mongo.ObjectID(req.params.id)}, req.body, function (err, post) {
     if (err) return next(err);
-    res.json(post);
-  });
-});
-
-/* DELETE BOOK */
-router.delete('/:type', function (req, res, next) {
-  cloudinary.uploader.destroy(req.params.type, { 
-     });
-
-  Image.findOneAndRemove(req.params.type, req.body, function (err, post) {
-    if (err) return next(err);
-    res.json(post);
+    cloudinary.uploader.destroy(req.params.type, req.body, function (err, post) {
+      if (err) return next(err); 
+      res.json(post);
+    });
   });
 });
 

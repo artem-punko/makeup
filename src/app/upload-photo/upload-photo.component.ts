@@ -68,11 +68,13 @@ export class UploadPhotoComponent implements OnInit {
   getAll() {
     this.imageService.getAllPhoto(this.page).subscribe(success => {
       this.images = success;
+      console.log(this.images)
     });
   }
 
-  delete(id) {
-    this.imageService.deletePhoto(id).subscribe( success => {
+  delete(id, type) {
+    console.log(id)
+    this.imageService.deletePhoto(id, type).subscribe( success => {
       this.getAll();
     });
 

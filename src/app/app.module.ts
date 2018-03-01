@@ -15,6 +15,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
 // services
 import { ImageService } from './services/image.service';
+import { LoginComponent } from './login/login.component';
 
 // routing
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([
@@ -42,7 +43,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
     AppComponent,
     GalleryComponent,
     ProfileComponent,
-    UploadPhotoComponent
+    UploadPhotoComponent,
+    LoginComponent
   ],
   imports: [
     FileUploadModule,
