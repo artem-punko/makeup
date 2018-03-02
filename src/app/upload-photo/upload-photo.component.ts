@@ -1,6 +1,6 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 import { ImageService } from '../services/image.service';
-import { CloudinaryOptions, CloudinaryUploader , CloudinaryImageComponent, CloudinaryTransforms} from 'ng2-cloudinary';
+import { CloudinaryOptions, CloudinaryUploader, CloudinaryImageComponent, CloudinaryTransforms } from 'ng2-cloudinary';
 @Component({
   selector: 'app-upload-photo',
   templateUrl: './upload-photo.component.html',
@@ -11,6 +11,7 @@ export class UploadPhotoComponent implements OnInit {
   images: any;
   page = 1;
   imageId: string;
+  files;
   uploader: CloudinaryUploader = new CloudinaryUploader(
     new CloudinaryOptions({ cloudName: 'dhvqokydk', uploadPreset: 'stribuk_makeup' })
   );
@@ -44,6 +45,7 @@ export class UploadPhotoComponent implements OnInit {
   ];
 
   constructor(private imageService: ImageService) {
+
     this.uploader.onSuccessItem = (item: any, response: string, status: number, headers: any): any => {
       const res: any = JSON.parse(response);
       this.imageId = res.public_id;
@@ -52,6 +54,8 @@ export class UploadPhotoComponent implements OnInit {
         type: this.typeImage
       }).subscribe(success => {
         this.getAll();
+        this.uploader.queue.shift();
+        console.log(this.uploader);
       });
       return { item, response, status, headers };
     };
@@ -68,15 +72,32 @@ export class UploadPhotoComponent implements OnInit {
   getAll() {
     this.imageService.getAllPhoto(this.page).subscribe(success => {
       this.images = success;
-      console.log(this.images)
     });
   }
 
   delete(id, type) {
-    console.log(id)
-    this.imageService.deletePhoto(id, type).subscribe( success => {
+    this.imageService.deletePhoto(id, type).subscribe(success => {
       this.getAll();
     });
 
   }
+
+  next() {
+    if (this.images.pages < this.page + 1) {
+      this.page = 1;
+    } else {
+      this.page = this.page + 1;
+    }
+    this.getAll();
+  }
+
+  back() {
+    if (0 === this.page - 1) {
+      this.page = this.images.pages;
+    } else {
+      this.page = this.page - 1;
+    }
+    this.getAll();
+  }
+
 }

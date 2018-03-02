@@ -69,11 +69,111 @@
 }
 
 .cross {
-    width: 2%;
+    margin-top: 0.5%;
+    margin-left: 14.5%;
+    width: 2%; 
     height: 2%;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/cross-white.png");
+    opacity: .5;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/cross-red.png");
     position: absolute;
     cursor: pointer;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.right-container {
+    top: 50%;
+    transform: translateY(-49%);
+    position: absolute;
+    right: 0.5%;
+    width: 3%;
+    height: 3%;
+}
+
+.arrow-position-right {
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/right.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+}
+
+.arrow-position-right:hover {
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/right-red.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.4s; 
+    -webkit-animation-duration: 0.4s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    cursor: pointer;
+}
+
+.left-container {
+    top: 50%;
+    transform: translateY(-49%);
+    position: absolute;
+    width: 3%;
+    height: 3%;
+}
+
+.arrow-position-left {
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/left.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.arrow-position-left:hover {
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/left-red.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    opacity: 1;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.4s; 
+    -webkit-animation-duration: 0.4s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    cursor: pointer;
+}
+
+.images-block {
+    width: 100%;
+    height: auto;
+}
+
+.button-block {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.left {
+    cursor: pointer;
+    background-color: #77000062;
+    margin-right: 5%;
+}
+
+.right {
+    cursor: pointer;
+    background-color: #77000062;
+    margin-left: 5%;
 }

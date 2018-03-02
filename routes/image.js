@@ -5,10 +5,10 @@ var Image = require('../models/Image.js');
 var cloudinary = require('cloudinary');
 
 
-cloudinary.config({ 
-  cloud_name: 'dhvqokydk', 
+cloudinary.config({
+  cloud_name: 'dhvqokydk',
   api_key: '557163583743686',
-  api_secret: '7Pwn18CDbFtGOGu5Lt99riL7Byo' 
+  api_secret: '7Pwn18CDbFtGOGu5Lt99riL7Byo'
 });
 
 
@@ -26,7 +26,7 @@ router.get('/:page', function (req, res, next) {
         res.json({
           products: products,
           current: page,
-          pages: Math.ceil(count / perPage)==0 ? 1 : Math.ceil(count / perPage)
+          pages: Math.ceil(count / perPage) == 0 ? 1 : Math.ceil(count / perPage)
         });
       });
     });
@@ -46,7 +46,7 @@ router.get('/:type/:page', function (req, res, next) {
         res.json({
           products: products,
           current: page,
-          pages: Math.ceil(count / perPage)==0 ? 1 : Math.ceil(count / perPage)
+          pages: Math.ceil(count / perPage) == 0 ? 1 : Math.ceil(count / perPage)
         });
       });
     });
@@ -60,12 +60,10 @@ router.post('/', function (req, res, next) {
 });
 
 router.delete('/:id/:type', function (req, res, next) {
-  Image.findOneAndRemove({_id : new mongoose.mongo.ObjectID(req.params.id)}, req.body, function (err, post) {
+  cloudinary.uploader.destroy(req.params.type, {});
+  Image.findOneAndRemove({ _id: new mongoose.mongo.ObjectID(req.params.id) }, req.body, function (err, post) {
     if (err) return next(err);
-    cloudinary.uploader.destroy(req.params.type, req.body, function (err, post) {
-      if (err) return next(err); 
-      res.json(post);
-    });
+    res.json(post);
   });
 });
 
