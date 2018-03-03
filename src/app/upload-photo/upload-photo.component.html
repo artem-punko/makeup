@@ -1,9 +1,6 @@
-<div class="upload">
-    <div class="text-center">
-        <h2>Добавление фотографии</h2>
-    </div>
-    <div class="text-center margin-block">
-        <input type="text" class=" element" [(ngModel)]="key">
+<div *ngIf="key=='i_love_artem'" class="upload">
+    <div class="text-center" style="font-size: 1.4vw;">
+        Добавление фотографии
     </div>
     <div class="text-center margin-block">
         <select [(ngModel)]="typeImage" class=" element">
@@ -28,16 +25,15 @@
             <span class="glyphicon glyphicon-upload "></span> Загрузить
         </button>
     </div>
-    <div  class=" text-center margin-block button-block">
+    <hr>
+    <div class=" text-center button-block">
         <button type="button" class="btn  left" (click)="back()">
-            <
-        </button>
-        Удаление файлов
-        <button type="button" class="btn  right" (click)="next()">
-            >
-        </button>
+            < </button>
+                Удаление файлов
+                <button type="button" class="btn  right" (click)="next()">
+                    >
+                </button>
     </div>
-
     <div class="text-center margin-block images-block">
         <div *ngIf="images">
             <div *ngFor="let image of images.products;let i = index" class="item_image">
@@ -47,4 +43,12 @@
         </div>
     </div>
 
+</div>
+<div *ngIf="key!='i_love_artem'" class="password">
+    <div class="text-center">
+        <h2>Пароль</h2>
+    </div>
+    <div class="text-center margin-block">
+        <input type="password" class="btn element" [(ngModel)]="key">
+    </div>
 </div>

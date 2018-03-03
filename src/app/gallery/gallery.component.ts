@@ -27,6 +27,8 @@ export class GalleryComponent implements OnInit {
     this.getAll();
   }
 
+
+
   next() {
     if (this.images.pages < this.page + 1) {
       this.page = 1;

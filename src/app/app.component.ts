@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -45,7 +46,19 @@ export class AppComponent {
     }
   ];
 
-  constructor() { }
+  mouseWheelDir: String = '';
+
+  mouseWheelUpFunc() {
+    this.type = 1;
+    this.router.navigate(['/profile']);
+  }
+
+  mouseWheelDownFunc() {
+    this.type = 2;
+    this.router.navigate(['/gallery']);
+  }
+
+  constructor(private router: Router) { }
 
 
   plusEvent(event) {

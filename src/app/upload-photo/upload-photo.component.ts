@@ -12,6 +12,8 @@ export class UploadPhotoComponent implements OnInit {
   page = 1;
   imageId: string;
   files;
+  key = '';
+  password: Boolean = false;
   uploader: CloudinaryUploader = new CloudinaryUploader(
     new CloudinaryOptions({ cloudName: 'dhvqokydk', uploadPreset: 'stribuk_makeup' })
   );

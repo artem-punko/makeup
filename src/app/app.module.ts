@@ -17,6 +17,9 @@ import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
 import { ImageService } from './services/image.service';
 import { LoginComponent } from './login/login.component';
 
+// directives
+import { MouseWheelDirective } from './directives/mousewheel.directive';
+
 // routing
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([
   {
@@ -44,11 +47,12 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
     GalleryComponent,
     ProfileComponent,
     UploadPhotoComponent,
-    LoginComponent
+    LoginComponent,
+    MouseWheelDirective
   ],
   imports: [
     FileUploadModule,
-    HttpClientModule ,
+    HttpClientModule,
     FormsModule,
     Ng2CloudinaryModule,
     BrowserModule,

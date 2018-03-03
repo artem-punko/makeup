@@ -6,6 +6,7 @@
     margin-left: 25%;
     margin-right: 25%;
     padding: 5%;
+    padding-bottom: 0%;
     overflow-y: auto;
     background-color: rgba(38, 38, 38, 0.2);
     animation-name: myopacity;
@@ -27,6 +28,7 @@
 *{
     font-family: Poiret One;
     font-weight: bold;
+    /* font-size: 1.2vw; */
 }
 
 .element {
@@ -176,4 +178,22 @@ input[type=file] {
     cursor: pointer;
     background-color: #77000062;
     margin-left: 5%;
+}
+
+.password {
+    position: fixed;
+    width: 50%;
+    top: 5%;
+    height: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5%;
+    overflow-y: auto;
+    background-color: rgba(38, 38, 38, 0.2);
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
 }
