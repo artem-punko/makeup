@@ -9,20 +9,18 @@ export class ImageService {
   constructor(private http: HttpClient) { }
 
   getPhotoByType(type, page) {
-    return this.http.get('http://localhost:3001/image/' + type + '/' + page);
+    return this.http.get('/image/' + type + '/' + page);
   }
 
   getAllPhoto(page) {
-    return this.http.get('http://localhost:3001/image/' + page);
+    return this.http.get('/image/' + page);
   }
 
   savePhoto(image) {
-    return this.http.post('http://localhost:3001/image', image);
+    return this.http.post('/image', image);
   }
 
   deletePhoto(id, type) {
-    return this.http.delete('http://localhost:3001/image/' + id + '/' + type);
-
+    return this.http.delete('/image/' + id + '/' + type);
   }
-
 }
