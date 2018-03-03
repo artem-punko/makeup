@@ -48,12 +48,12 @@ export class AppComponent {
 
   mouseWheelDir: String = '';
 
-  mouseWheelUpFunc() {
+  mouseWheelUpFunc(event) {
     this.type = 1;
     this.router.navigate(['/profile']);
   }
 
-  mouseWheelDownFunc() {
+  mouseWheelDownFunc(event) {
     this.type = 2;
     this.router.navigate(['/gallery']);
   }
