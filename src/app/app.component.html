@@ -15,6 +15,11 @@
             <div [ngClass]="{'image-gallery-click': type==2}" tooltip='tooltip' message="Галерея" class="gallery"></div>
           </a>
         </div>
+        <div class="one-social">
+            <a (click)="setType(3)" class="link-to-phone" style="text-decoration: none;">
+              <div [ngClass]="{'image-record-click': type==3}" tooltip='tooltip' message="Заявка" class="record"></div>
+            </a>
+          </div>
       </div>
       <div class="block-for-social">
         <div class="one-social">
@@ -80,3 +85,39 @@
 </div>
 
 </div> -->
+
+<!-- <bs-modal #myModal>
+    <bs-modal-header>
+        <h3>Notification</h3>
+      </bs-modal-header>
+      <bs-modal-body></bs-modal-body>
+      <bs-modal-footer>
+        <button class="btn btn-default" (click)="button()"></button>
+        </bs-modal-footer>
+</bs-modal> -->
+
+<!-- Button trigger modal -->
+<button id="modalTrigger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+   
+  <!-- Modal -->
+  <div id="exampleModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button id="closeExampleModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

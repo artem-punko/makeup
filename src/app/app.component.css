@@ -26,6 +26,15 @@
     height: 20%;
 }
 
+.record {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/record-white.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .profile {
     width: 60%;
     height: 60%;
@@ -103,6 +112,15 @@
     height: 60%;
     margin: 20%;
     background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/gallery-red.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.record:hover {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/record-red.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -193,6 +211,11 @@
 
 .image-gallery-click {
     background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/gallery-red.png");
+}
+
+.image-record-click {
+    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/record-red.png");
+
 }
 
 

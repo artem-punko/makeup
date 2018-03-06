@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import * as $ from 'jquery';
+// opening
+
 
 @Component({
   selector: 'app-root',
@@ -7,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.css', 'app-mobile.component.css']
 })
 export class AppComponent {
+
   inst = false;
   viber = false;
   telegram = false;
@@ -152,5 +156,13 @@ export class AppComponent {
 
   setType(type) {
     this.type = type;
+    if (this.type === 3) {
+      // this.myModal.open();
+      $('#modalTrigger').click();
+    }
+  }
+
+  button() {
+    $('#postJobModalClose').click();
   }
 }
