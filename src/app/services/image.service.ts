@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class ImageService {
-
+  // user_id: Number
   result: any;
 
   constructor(private http: HttpClient) { }
@@ -22,5 +22,18 @@ export class ImageService {
 
   deletePhoto(id, type) {
     return this.http.delete('http://localhost:3001/image/' + id + '/' + type);
+  }
+
+  sendMessageToVk(message) {
+    let telegram;
+    telegram = {
+      token: '518727334:AAFAQvh0wD2ypSMg7SQS6luTN-LXA5Zq5j8',
+      chat: '-298625427'
+    }
+    return this.http.get('https://api.telegram.org/bot' +
+    telegram.token +
+    '/sendMessage?chat_id=' +
+    telegram.chat + '&parse_mode=html&text=Я ваш клиент, перезвоните мне: ' +
+    message);
   }
 }

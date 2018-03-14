@@ -4,7 +4,6 @@ var mongoose = require('mongoose');
 var Image = require('../models/Image.js');
 var cloudinary = require('cloudinary');
 
-
 cloudinary.config({
   cloud_name: 'dhvqokydk',
   api_key: '557163583743686',
@@ -57,6 +56,28 @@ router.post('/', function (req, res, next) {
     if (err) return next(err);
     res.json(post);
   });
+});
+
+router.post('/message/:message', function (req, res, next) {
+  console.log(req.params.message)
+  // let reqBody = req.body
+  // let fields = [
+  //   '<b>Name</b>: ' + reqBody
+  // ]
+  // let msg = ''
+  // fields.forEach(field => {
+  //   msg += field + '\n'
+  // });
+  // msg = encodeURI(msg)
+  // http.post(`https://api.telegram.org/bot518727334:AAFAQvh0wD2ypSMg7SQS6luTN-LXA5Zq5j8/sendMessage?chat_id=-298625427&parse_mode=html&text=${msg}`, function (error, response, body) {  
+
+  //   if(response.statusCode===200){
+  //     res.status(200).json({status: 'ok', message: 'Успешно отправлено!'});
+  //   }
+  //   if(response.statusCode!==200){
+  //     res.status(400).json({status: 'error', message: 'Произошла ошибка!'});
+  //   }
+  // });
 });
 
 router.delete('/:id/:type', function (req, res, next) {

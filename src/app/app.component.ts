@@ -1,8 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
-// opening
-
+import { ImageService } from './services/image.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,6 @@ import * as $ from 'jquery';
   styleUrls: ['app.component.css', 'app-mobile.component.css']
 })
 export class AppComponent {
-
   inst = false;
   viber = false;
   telegram = false;
@@ -22,6 +20,7 @@ export class AppComponent {
   plus = false;
   image: any;
   type = 0;
+  phoneNumber = '';
   images = [
     {
       src: '../assets/11.jpg',
@@ -62,7 +61,10 @@ export class AppComponent {
     this.router.navigate(['/gallery']);
   }
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private imageService: ImageService
+  ) { }
 
 
   plusEvent(event) {
@@ -164,5 +166,10 @@ export class AppComponent {
 
   button() {
     $('#postJobModalClose').click();
+  }
+
+  sendMessageToVk() {
+    this.imageService.sendMessageToVk(this.phoneNumber).subscribe( success => {
+    });
   }
 }

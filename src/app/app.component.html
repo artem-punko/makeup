@@ -16,10 +16,10 @@
           </a>
         </div>
         <div class="one-social">
-            <a (click)="setType(3)" class="link-to-phone" style="text-decoration: none;">
-              <div [ngClass]="{'image-record-click': type==3}" tooltip='tooltip' message="Заявка" class="record"></div>
-            </a>
-          </div>
+          <a (click)="setType(3)" data-toggle="modal" data-target="#exampleModal" class="link-to-phone" style="text-decoration: none;">
+            <div [ngClass]="{'image-record-click': type==3}" tooltip='tooltip' message="Заявка" class="record"></div>
+          </a>
+        </div>
       </div>
       <div class="block-for-social">
         <div class="one-social">
@@ -44,80 +44,51 @@
     </div>
   </div>
 </div>
-<!-- 
 
-<div class="hidden-sm-up">
-  <div class="block-for-links-mobile">
-    <div class="one-social-links-mobile">
-          <a (click)="setType(1)" class="link-to-phone" routerLink="/profile" style="text-decoration: none;">
-            <div [ngClass]="{'image-profile-click-mobile': type==1}" class="profile-mobile"></div>
-          </a>
-        </div>
-        <div class="one-social-links-mobile">
-          <a (click)="setType(2)" class="link-to-phone" routerLink="/gallery" style="text-decoration: none;">
-            <div [ngClass]="{'image-gallery-click-mobile': type==2}" class="gallery-mobile"></div>
-          </a>
-        </div>
-  </div>
-  <div class="container-for-social-mobile">
 
-    <div class="block-for-social-mobile">
-      <div class="one-social-mobile">
-        <a class="link-to-phone" href="tel:+375292762060" style="text-decoration: none;">
-          <div class="phone-mobile"></div>
-        </a>
-      </div>
-      <div class="one-social-mobile">
-        <div (click)="clickInst()" class="instagram-mobile"></div>
-      </div>
-      <div class="one-social-mobile">
-        <div (click)="clickVk()" class="vk-mobile"></div>
-      </div>
 
-      <div class="one-social-mobile">
-        <div (click)="clickViber()" class="viber-mobile"></div>
-      </div>
-      <div class="one-social-mobile">
-        <div (click)="clickTelegram()" class="telegram-mobile"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div> -->
-
-<!-- <bs-modal #myModal>
-    <bs-modal-header>
-        <h3>Notification</h3>
-      </bs-modal-header>
-      <bs-modal-body></bs-modal-body>
-      <bs-modal-footer>
-        <button class="btn btn-default" (click)="button()"></button>
-        </bs-modal-footer>
-</bs-modal> -->
-
-<!-- Button trigger modal -->
-<button id="modalTrigger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<!-- <button id="modalTrigger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     Launch demo modal
-  </button>
-   
-  <!-- Modal -->
-  <div id="exampleModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button id="closeExampleModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
+  </button> -->
+
+<div id="exampleModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- <div class="modal-header  text-center">
+          <div class="text-center">Отправить заявку</div>
+          <h5 class="modal-title"></h5>
+         
+        </div> -->
+      <div class="modal-body">
+        <button id="closeExampleModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="text-center">
+
+          <div class="margin">
+            Для записи оставьте свой номер телефона и я перезвоню вам в ближайшее время:
+          </div>
+          <div class="margin">
+            <input type="text" class="margin-block element"  [(ngModel)]="phoneNumber"  #phoneNumberValid="ngModel" required pattern="(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})">
+            <div [hidden]="phoneNumberValid.valid || phoneNumberValid.untouched" class="valid">
+              Проверьте введенный номер
+          </div>
+          </div>
+          <div class="margin">
+            <button [hidden]="phoneNumberValid.invalid" type="button" class="btn btn-style" (click)="sendMessageToVk()">Отправить</button>
+          </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Отправить</button>
+        </div> -->
       </div>
     </div>
   </div>
+
+  <!-- <?
+
+$client_id = '6408401';
+$scope = 'offline,messages'
+?> -->
+
+<a href="https://oauth.vk.com/authorize?client_id=<?='6408401';?>&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=<?='offline,messages';?>&response_type=token&v=5.37">Push the button</a>
