@@ -8,14 +8,16 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng2CloudinaryModule } from 'ng2-cloudinary';
 import { FileUploadModule } from 'ng2-file-upload';
+import { SimpleNotificationsModule } from 'angular2-notifications';
+
 // components
 import { AppComponent } from './app.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { ProfileComponent } from './profile/profile.component';
-import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { UploadPhotoComponent } from './components/upload-photo/upload-photo.component';
+
 // services
 import { ImageService } from './services/image.service';
-import { LoginComponent } from './login/login.component';
 
 // directives
 import { MouseWheelDirective } from './directives/mousewheel.directive';
@@ -47,7 +49,6 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
     GalleryComponent,
     ProfileComponent,
     UploadPhotoComponent,
-    LoginComponent,
     MouseWheelDirective
   ],
   imports: [
@@ -58,7 +59,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
     BrowserModule,
     rootRouting,
     HttpModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SimpleNotificationsModule.forRoot()
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [ImageService],

@@ -120,7 +120,7 @@ hr {
 
 .modal-content {
     width: 100%;
-    height: 100%;
+    height: auto;
     border: none !important;
     border-radius: 5px !important;
     background-color: #dededee3 !important;
@@ -140,4 +140,29 @@ input {
     font-family: Poiret One !important;
     outline:none;
     text-align: center;
+}
+
+.simple-notification.success {
+    border-radius: 5px;
+    background: #7878787a !important;
+}
+
+simple-notifications {
+    font-size: 1.2vw !important;
+    font-family: Poiret One !important;
+}
+
+.simple-notification .icon svg {
+    visibility: hidden;
+    fill: #983f3fe8 !important;
+}
+
+.close {
+    font-size: 1.4vw !important;
+    font-family: Poiret One !important;
+}
+
+.simple-notification.error {
+    border-radius: 5px;
+    background: #7878787a !important;
 }

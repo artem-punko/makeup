@@ -1,3 +1,4 @@
+<simple-notifications [options]="options"></simple-notifications>
 <div appMouseWheel (mouseWheelUp)="mouseWheelUpFunc($event)" (mouseWheelDown)="mouseWheelDownFunc($event)" style="width: 100%; height: -webkit-fill-available;">
   <router-outlet></router-outlet>
 
@@ -46,19 +47,9 @@
 </div>
 
 
-
-<!-- <button id="modalTrigger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button> -->
-
-<div id="exampleModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div id="exampleModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <!-- <div class="modal-header  text-center">
-          <div class="text-center">Отправить заявку</div>
-          <h5 class="modal-title"></h5>
-         
-        </div> -->
       <div class="modal-body">
         <button id="closeExampleModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
@@ -69,26 +60,20 @@
             Для записи оставьте свой номер телефона и я перезвоню вам в ближайшее время:
           </div>
           <div class="margin">
-            <input type="text" class="margin-block element"  [(ngModel)]="phoneNumber"  #phoneNumberValid="ngModel" required pattern="(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})">
+            <input type="text" class="margin-block element" [(ngModel)]="phoneNumber" #phoneNumberValid="ngModel" required pattern="(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})">
             <div [hidden]="phoneNumberValid.valid || phoneNumberValid.untouched" class="valid">
               Проверьте введенный номер
-          </div>
+              <br> (+375---------; 80---------)
+            </div>
           </div>
           <div class="margin">
-            <button [hidden]="phoneNumberValid.invalid" type="button" class="btn btn-style" (click)="sendMessageToVk()">Отправить</button>
+            <button [hidden]="phoneNumberValid.invalid" type="button" class="btn btn-style" (click)="sendMessageToVk()" data-dismiss="modal"
+              aria-label="Close">
+              Отправить
+            </button>
           </div>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Отправить</button>
-        </div> -->
       </div>
     </div>
   </div>
-
-  <!-- <?
-
-$client_id = '6408401';
-$scope = 'offline,messages'
-?> -->
-
-<a href="https://oauth.vk.com/authorize?client_id=<?='6408401';?>&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=<?='offline,messages';?>&response_type=token&v=5.37">Push the button</a>
+</div>

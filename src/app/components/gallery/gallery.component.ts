@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageService } from '../services/image.service';
+import { ImageService } from '../../services/image.service';
 import { CloudinaryOptions, CloudinaryUploader } from 'ng2-cloudinary';
 
 class Image {
@@ -11,7 +11,7 @@ class Image {
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: [ './gallery-mobile.component.css', './gallery.component.css']
+  styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
   uploader: CloudinaryUploader = new CloudinaryUploader(
@@ -26,8 +26,6 @@ export class GalleryComponent implements OnInit {
     this.images = new Image();
     this.getAll();
   }
-
-
 
   next() {
     if (this.images.pages < this.page + 1) {
@@ -68,7 +66,6 @@ export class GalleryComponent implements OnInit {
   getByType() {
     this.imageService.getPhotoByType(this.type, this.page).subscribe(success => {
       this.images = success;
-      console.log(success)
     });
   }
 

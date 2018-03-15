@@ -245,6 +245,8 @@
     margin-top: 8%;
     margin-left: 4%;
     margin-right: 4%;
+    font-size: 1.2vw !important;
+    font-family: Poiret One !important;
 }
 
 .btn-style {
@@ -260,3 +262,4 @@
     font-family: Poiret One;
     border: solid 1px rgba(106, 106, 106, 0.577);
 }
+

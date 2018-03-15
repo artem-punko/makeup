@@ -5,7 +5,6 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var image = require('./routes/image');
-var message = require('./routes/message');
 var app = express();
 
 var mongoose = require('mongoose');
@@ -22,7 +21,6 @@ mongoose.connect('mongodb://makeup_collection:30secondstomars@ds119258.mlab.com:
     next();
 });
 
-
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
@@ -31,7 +29,6 @@ app.use('/upload', express.static(path.join(__dirname, 'dist')));
 app.use('/gallery', express.static(path.join(__dirname, 'dist')));
 app.use('/profile', express.static(path.join(__dirname, 'dist')));
 app.use('/image', image);
-app.use('/message', message);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

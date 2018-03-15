@@ -1,5 +1,5 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
-import { ImageService } from '../services/image.service';
+import { ImageService } from '../../services/image.service';
 import { CloudinaryOptions, CloudinaryUploader, CloudinaryImageComponent, CloudinaryTransforms } from 'ng2-cloudinary';
 @Component({
   selector: 'app-upload-photo',
@@ -57,7 +57,6 @@ export class UploadPhotoComponent implements OnInit {
       }).subscribe(success => {
         this.getAll();
         this.uploader.queue.shift();
-        console.log(this.uploader);
       });
       return { item, response, status, headers };
     };

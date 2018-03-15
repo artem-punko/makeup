@@ -58,28 +58,6 @@ router.post('/', function (req, res, next) {
   });
 });
 
-router.post('/message/:message', function (req, res, next) {
-  console.log(req.params.message)
-  // let reqBody = req.body
-  // let fields = [
-  //   '<b>Name</b>: ' + reqBody
-  // ]
-  // let msg = ''
-  // fields.forEach(field => {
-  //   msg += field + '\n'
-  // });
-  // msg = encodeURI(msg)
-  // http.post(`https://api.telegram.org/bot518727334:AAFAQvh0wD2ypSMg7SQS6luTN-LXA5Zq5j8/sendMessage?chat_id=-298625427&parse_mode=html&text=${msg}`, function (error, response, body) {  
-
-  //   if(response.statusCode===200){
-  //     res.status(200).json({status: 'ok', message: 'Успешно отправлено!'});
-  //   }
-  //   if(response.statusCode!==200){
-  //     res.status(400).json({status: 'error', message: 'Произошла ошибка!'});
-  //   }
-  // });
-});
-
 router.delete('/:id/:type', function (req, res, next) {
   cloudinary.uploader.destroy(req.params.type, {});
   Image.findOneAndRemove({ _id: new mongoose.mongo.ObjectID(req.params.id) }, req.body, function (err, post) {
