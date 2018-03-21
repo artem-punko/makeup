@@ -74,13 +74,42 @@
     font-weight: bold;
     font-size: 1.4vw;
     color: rgba(90, 90, 90, 0.98);
-    margin-top: 3%;
-    width: 84%;
-    height: 63%;
+    margin-top: 4%;
+    width: 40%;
+    height: 30%;
     display: -webkit-inline-box;
     vertical-align: bottom;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.about-container1 {
+    font-family: Poiret One;
+    font-weight: bold;
+    font-size: 1.4vw;
+    color: rgba(90, 90, 90, 0.98);
+    margin-top: 4%;
+    width: 40%;
+    height: 30%;
+    display: -webkit-inline-box;
+    vertical-align: bottom;
+    margin-left: 4%;
+    margin-right: 5%;
+     
+}
+
+.about-container2 {
+    text-align: -webkit-center !important;
+    font-family: Poiret One;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: rgba(90, 90, 90, 0.98);
+    margin-top: 8%;
+    width: 100%;
+    height: auto;
+    display: -webkit-inline-box;
+    vertical-align: bottom;
     
 }
 
@@ -91,4 +120,64 @@
     background-color: rgba(165, 163, 163, 0);
     border-radius: 5px;
     margin-top: initial;
+}
+
+.heart {
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translateY(-91%);
+}
+
+.lds-heart1 {
+    display: inline-block;
+    position: absolute;
+    width: 48;
+    height: 48;
+    transform: rotate(45deg);
+    transform-origin: 16px 16px;
+}
+.lds-heart1 div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(56, 56, 56, 0.672);
+    animation: lds-heart1 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart1 div:after,
+.lds-heart1 div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(28, 28, 28, 0.967);
+}
+.lds-heart1 div:before {
+    left: -12px;
+    border-radius: 50% 0 0 50%;
+}
+.lds-heart1 div:after {
+    top: -12px;
+    border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart1 {
+    0% {
+        transform: scale(0.95);
+    }
+    5% {
+        transform: scale(1.1);
+    }
+    39% {
+        transform: scale(0.85);
+    }
+    45% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(0.9);
+    }
 }
