@@ -74,7 +74,7 @@
     font-weight: bold;
     font-size: 1.4vw;
     color: rgba(90, 90, 90, 0.98);
-    margin-top: 4%;
+    margin-top: 2%;
     width: 40%;
     height: 30%;
     display: -webkit-inline-box;
@@ -89,8 +89,8 @@
     font-weight: bold;
     font-size: 1.4vw;
     color: rgba(90, 90, 90, 0.98);
-    margin-top: 4%;
-    width: 40%;
+    margin-top: 2%;
+    width: 38%;
     height: 30%;
     display: -webkit-inline-box;
     vertical-align: bottom;
@@ -105,7 +105,21 @@
     font-weight: bold;
     font-size: 1.5vw;
     color: rgba(90, 90, 90, 0.98);
-    margin-top: 8%;
+    margin-top: 9%;
+    width: 100%;
+    height: auto;
+    display: -webkit-inline-box;
+    vertical-align: bottom;
+    
+}
+
+.about-container3 {
+    text-align: -webkit-center !important;
+    font-family: Poiret One;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: rgba(90, 90, 90, 0.98);
+    margin-top: 2%;
     width: 100%;
     height: auto;
     display: -webkit-inline-box;
@@ -124,9 +138,9 @@
 
 .heart {
     position: absolute;
-    top: 91%;
-    left: 50%;
-    transform: translateY(-91%);
+    top: 93%;
+    left: 49%;
+    transform: translateY(-93%);
 }
 
 .lds-heart1 {
