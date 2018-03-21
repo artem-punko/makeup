@@ -72,14 +72,15 @@
 .about-container {
     font-family: Poiret One;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     color: rgba(90, 90, 90, 0.98);
     margin-top: 3%;
-    width: 41%;
+    width: 84%;
     height: 63%;
     display: -webkit-inline-box;
     vertical-align: bottom;
     margin-left: 8%;
+    margin-right: 8%;
     
 }
 
