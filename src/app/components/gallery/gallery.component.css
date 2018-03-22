@@ -533,22 +533,20 @@ input[type="checkbox"].c:checked ~ .grid {
 .heart {
     position: absolute;
     top: 93%;
-    left: 50%;
+    left: 55%;
     transform: translateY(-93%);
 }
 
 .lds-heart1 {
     display: inline-block;
     position: absolute;
-    width: 48;
-    height: 48;
     transform: rotate(45deg);
-    transform-origin: 16px 16px;
+    transform-origin: 1px 1px;
 }
 .lds-heart1 div {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 1vw;
+    height: 1vw;
     background: rgba(255, 255, 255, 0.672);
     animation: lds-heart1 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -557,16 +555,16 @@ input[type="checkbox"].c:checked ~ .grid {
     content: " ";
     position: absolute;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 1vw;
+    height: 1vw;
     background: rgb(255, 255, 255);
 }
 .lds-heart1 div:before {
-    left: -12px;
+    left: -0.6vw;
     border-radius: 50% 0 0 50%;
 }
 .lds-heart1 div:after {
-    top: -12px;
+    top: -0.6vw;
     border-radius: 50% 50% 0 0;
 }
 @keyframes lds-heart1 {

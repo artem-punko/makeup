@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   right = false;
   plus = false;
   image: any;
-  type = 0;
+  type = 1;
   phoneNumber = '';
 
   public options = {
@@ -138,9 +138,10 @@ export class AppComponent implements OnInit {
   }
 
   setType(type) {
-    this.type = type;
-    if (this.type === 3) {
+    if (type === 3) {
       $('#modalTrigger').click();
+    } else {
+      this.type = type;
     }
   }
 
