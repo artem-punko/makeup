@@ -35,7 +35,7 @@
 }
 
 .header-block {
-    border-bottom: 0.01vw solid darkred;
+    /* border-bottom: 0.01vw solid darkred; */
     font-family: Poiret One;
     font-weight: bold;
     width: 60%;
@@ -76,7 +76,7 @@
 .about-container {
     font-family: Poiret One;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     color: rgba(90, 90, 90, 0.98);
     margin-top: 1%;
     width: 40%;
@@ -91,7 +91,7 @@
 .about-container1 {
     font-family: Poiret One;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     color: rgba(90, 90, 90, 0.98);
     margin-top: 1%;
     width: 38%;
@@ -109,7 +109,7 @@
     font-weight: bold;
     font-size: 1.5vw;
     color: rgba(90, 90, 90, 0.98);
-    margin-top: 9%;
+    margin-top: 5%;
     width: 100%;
     height: auto;
     display: -webkit-inline-box;
