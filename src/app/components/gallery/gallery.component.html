@@ -1,11 +1,14 @@
 <div>
     <div class="container-for-gallery">
-        <div *ngFor="let image of images.products;let i = index">
-            <input type="checkbox" class="c" id="{{i}}" />
-            <label for="{{i}}" class="d" class="lightbox">
-                <div class="cross"></div>
+        <div *ngIf="selectedImage!==-2">
+            <label class="lightbox">
+                <div class="cross" (click)="cross()"></div>
+                <div class="arrow-position-left-selected" (click)="backSelected()">
+                </div>
+                <div class="arrow-position-right-selected" (click)="nextSelected()">
+                </div>
                 <div class="sss">
-                    <img width="100%" height="100%" src="http://res.cloudinary.com/dhvqokydk/image/upload/c_fill,g_auto,w_1500,h_1500/{{image.imageId}}">
+                    <img width="100%" height="100%" src="http://res.cloudinary.com/dhvqokydk/image/upload/c_fill,g_auto,w_1500,h_1500/{{images.products[selectedImage].imageId}}">
                 </div>
             </label>
         </div>
@@ -14,7 +17,7 @@
             <div *ngIf="images.products" class="grid">
                 <div *ngFor="let image of images.products;let i = index" class="grid-item">
                     <label for="{{i}}">
-                        <div class="ttt">
+                        <div class="ttt" (click)="selectImage(i)">
                             <img width="100%" height="100%" src="http://res.cloudinary.com/dhvqokydk/image/upload/c_fill,g_auto,w_250,h_250/{{image.imageId}}">
                         </div>
                     </label>
@@ -22,13 +25,13 @@
             </div>
 
 
-            <div class="left-container">
+            <div *ngIf="selectedImage===-2" class="left-container">
                 <div class="arrow-position-left" (click)="back()">
                 </div>
             </div>
 
 
-            <div class="right-container">
+            <div *ngIf="selectedImage===-2" class="right-container">
                 <div class="arrow-position-right" (click)="next()">
                 </div>
             </div>

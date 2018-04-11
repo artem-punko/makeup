@@ -15,6 +15,54 @@
 }
 
 
+.lightbox .arrow-position-right-selected {
+    width: 2.5%;
+    height: 2.5%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url('http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/right.png');
+    position: fixed;
+    top: 50%;
+    right: 21%;
+    cursor: pointer;
+}
+
+.lightbox .arrow-position-left-selected {
+    width: 2.5%;
+    height: 2.5%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url('http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/left.png');
+    position: fixed;
+    top: 50%;
+    left: 22%;
+    cursor: pointer;
+}
+
+.lightbox .arrow-position-right-selected:hover {
+    width: 2.5%;
+    height: 2.5%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url('http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/right-red.png');
+    position: fixed;
+    top: 50%;
+    right: 21%;
+    cursor: pointer;
+}
+
+.lightbox .arrow-position-left-selected:hover {
+    width: 2.5%;
+    height: 2.5%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url('http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/left-red.png');
+    position: fixed;
+    top: 50%;
+    left: 22%;
+    cursor: pointer;
+}
+
 .right-container {
     top: 50%;
     transform: translateY(-49%);
@@ -92,13 +140,6 @@
     height: 100%;
 }
     
-label[for].d {
-    cursor: pointer;
-}
-
-input[type="checkbox"].c {
-    display: none;
-}
 
 .lightbox, .grid {
     top: 0;
@@ -106,20 +147,22 @@ input[type="checkbox"].c {
 }
 
 .lightbox {
-    background-color: rgba(81, 79, 79, 0.58);
+    background-color: rgba(81, 81, 81, 0.44);
     width: 100%;
     position: absolute;
     z-index: 1;
     min-height: 100%;
     overflow: hidden;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: -webkit-transform .5s ease-out;
-    transition: transform 0.8s ease-out;
+    animation-name: myopacity;
+    -webkit-animation-name: myopacity; 
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out; 
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
-
-
 
 .lightbox .sss {
     position: fixed;
@@ -134,27 +177,15 @@ input[type="checkbox"].c {
 }
 
 .lightbox .cross {
-    width: 2%;
-    height: 2%;
+    width: 1.8%;
+    height: 1.8%;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-image: url("http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/cross-white.png");
+    background-image: url('http://res.cloudinary.com/dhvqokydk/image/upload/v1519327037/cross-white.png');
     position: fixed;
-    top: 4%;
-    right: 0%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-input[type="checkbox"].c:checked + .lightbox {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
-
-input[type="checkbox"].c:checked ~ .grid {
-    opacity: .125;
+    top: 3%;
+    right: 1%;
+    cursor: pointer;
 }
 
 .grid {
@@ -221,6 +252,10 @@ input[type="checkbox"].c:checked ~ .grid {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+}
+
+.ttt {
+    cursor: zoom-in;
 }
 
 .grid .ttt:hover {

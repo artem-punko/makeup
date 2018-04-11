@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ImageService } from '../../services/image.service';
 import { CloudinaryOptions, CloudinaryUploader } from 'ng2-cloudinary';
 
@@ -20,12 +20,43 @@ export class GalleryComponent implements OnInit {
   images: any;
   type = 0;
   page = 1;
+  selectedImage = -2;
+  left = false;
+  right = false;
+  close = false;
   constructor(private imageService: ImageService) { }
+
+  @HostListener('window:keydown', ['$event'])
+  onKeyDown(e) {
+    if (e.keyCode === 37) {
+      this.left = true;
+    } else if (e.keyCode === 39) {
+      this.right = true;
+    } else if (e.keyCode === 27) {
+      this.close = true;
+    }
+  }
+
+  @HostListener('window:keyup', ['$event'])
+  onKeyUp(e) {
+    if (e.keyCode === 37 || this.left === true) {
+      this.backSelected();
+      this.left = false;
+    } else if (e.keyCode === 39 || this.right === true) {
+      this.nextSelected();
+      this.right = false;
+    } else if (e.keyCode === 27 || this.close === true) {
+      this.cross();
+      this.close = false;
+    }
+  }
 
   ngOnInit() {
     this.images = new Image();
     this.getAll();
   }
+
+
 
   next() {
     if (this.images.pages < this.page + 1) {
@@ -53,6 +84,24 @@ export class GalleryComponent implements OnInit {
     }
   }
 
+  backSelected() {
+    const selectedImage = this.selectedImage - 1;
+    if (selectedImage < 0) {
+      this.selectedImage = this.images.products.length - 1;
+    } else {
+      this.selectedImage = selectedImage;
+    }
+  }
+
+  nextSelected() {
+    const selectedImage = this.selectedImage + 1;
+    if (selectedImage === this.images.products.length) {
+      this.selectedImage = 0;
+    } else {
+      this.selectedImage = selectedImage;
+    }
+  }
+
   selectCategory(type) {
     this.page = 1;
     this.type = type;
@@ -75,4 +124,11 @@ export class GalleryComponent implements OnInit {
     });
   }
 
+  selectImage(image) {
+    this.selectedImage = image;
+  }
+
+  cross() {
+    this.selectedImage = -2;
+  }
 }
