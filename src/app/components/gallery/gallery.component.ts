@@ -14,6 +14,7 @@ class Image {
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
+  SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   uploader: CloudinaryUploader = new CloudinaryUploader(
     new CloudinaryOptions({ cloudName: 'dhvqokydk', uploadPreset: 'stribuk_makeup' })
   );
@@ -56,7 +57,15 @@ export class GalleryComponent implements OnInit {
     this.getAll();
   }
 
+  swipe( action) {
+    if (action === this.SWIPE_ACTION.RIGHT) {
+      this.backSelected();
+    }
 
+    if (action === this.SWIPE_ACTION.LEFT) {
+      this.nextSelected();
+    }
+  }
 
   next() {
     if (this.images.pages < this.page + 1) {

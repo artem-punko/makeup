@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng2CloudinaryModule } from 'ng2-cloudinary';
 import { FileUploadModule } from 'ng2-file-upload';
 import { SimpleNotificationsModule } from 'angular2-notifications';
-
+import 'hammerjs';
 // components
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
