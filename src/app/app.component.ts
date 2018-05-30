@@ -87,7 +87,7 @@ export class AppComponent implements OnInit {
 
   clickInst() {
     window.open(
-      'http://www.instagram.com/stribuk_make_up/', '_blank').focus();
+      'http://www.instagram.com/stribuk_makeup/', '_blank').focus();
   }
 
   vkEvent(event) {
